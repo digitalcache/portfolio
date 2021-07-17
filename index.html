@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="styles/normalize.css" >
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css" >
+    
+</head>
+<body>
+    <!-- Intro Screen -->
+    <div class="mainContainer">
+        <!-- Navigation Bar -->
+        <nav class="flex items-center justify-between flex-wrap p-6 lg:pl-16 lg:pr-12">
+            <div class="flex flex-1 items-center flex-shrink-0 text-white mr-6">
+                <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+            </div>
+            <!-- <div class="block lg:hidden">
+            <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+            </button>
+            </div> -->
+            <div class="w-full block md:flex md:items-center md:w-auto nav-mobile">
+                <div class="text-sm md:flex-grow mr-16">
+                    <!-- LinkedIn Icon -->
+                    <a target="_blank" href="https://www.linkedin.com/in/charlisdoley/" class="link block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0V24H24V0H0ZM8 19H5V8H8V19ZM6.5 6.732C5.534 6.732 4.75 5.942 4.75 4.968C4.75 3.994 5.534 3.204 6.5 3.204C7.466 3.204 8.25 3.994 8.25 4.968C8.25 5.942 7.467 6.732 6.5 6.732ZM20 19H17V13.396C17 10.028 13 10.283 13 13.396V19H10V8H13V9.765C14.397 7.179 20 6.988 20 12.241V19Z"/>
+                        </svg>
+                    </a>
+                    <!-- Instagram Icon -->
+                    <a target="_blank" href="https://www.instagram.com/digital.cache/" class="link block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                                <path d="M14.667 12C14.667 13.473 13.473 14.667 12 14.667C10.527 14.667 9.333 13.474 9.333 12C9.333 10.527 10.527 9.333 12 9.333C13.473 9.333 14.667 10.527 14.667 12ZM18.513 8.768C18.551 9.611 18.559 9.864 18.559 12C18.559 14.136 18.551 14.389 18.513 15.233C18.413 17.383 17.404 18.414 15.234 18.512C14.39 18.55 14.137 18.559 12 18.559C9.864 18.559 9.61 18.551 8.768 18.513C6.594 18.414 5.587 17.381 5.489 15.234C5.45 14.389 5.441 14.136 5.441 12C5.441 9.864 5.45 9.611 5.488 8.768C5.587 6.616 6.597 5.587 8.767 5.489C9.611 5.45 9.864 5.442 12 5.442C14.136 5.442 14.39 5.45 15.233 5.488C17.401 5.587 18.413 6.616 18.513 8.768ZM16.108 12C16.108 9.731 14.268 7.892 12 7.892C9.731 7.892 7.892 9.731 7.892 12C7.892 14.269 9.732 16.108 12 16.108C14.269 16.108 16.108 14.269 16.108 12ZM17.23 7.73C17.23 7.2 16.8 6.77 16.27 6.77C15.74 6.77 15.31 7.2 15.31 7.73C15.31 8.26 15.74 8.69 16.27 8.69C16.801 8.69 17.23 8.26 17.23 7.73V7.73ZM24 0V24H0V0H24ZM20 12C20 9.828 19.991 9.555 19.952 8.702C19.821 5.8 18.207 4.182 15.299 4.049C14.445 4.009 14.173 4 12 4C9.827 4 9.556 4.009 8.702 4.048C5.796 4.181 4.182 5.793 4.048 8.701C4.009 9.555 4 9.828 4 12C4 14.173 4.009 14.445 4.048 15.298C4.182 18.204 5.794 19.819 8.702 19.952C9.556 19.991 9.827 20 12 20C14.173 20 14.445 19.991 15.299 19.952C18.201 19.819 19.821 18.207 19.952 15.298C19.991 14.445 20 14.173 20 12V12Z" 
+                            />
+                            </g>
+                        </svg>
+                    </a>
+                    <!-- Behance Icon -->
+                    <a target="_blank" href="https://www.behance.net/charlisfre" class="link block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.003 12.333H14.985C15.274 10.356 17.887 10.618 18.003 12.333ZM8.261 13H6V15.01H8.228C10.264 15.01 10.139 13 8.261 13ZM8.181 9H6V11H8.389C10.062 11 10.327 9 8.181 9ZM24 0V24H0V0H24ZM14 8H19V7H14V8ZM10.448 11.618C12.355 10.644 12.285 7.068 8.635 7.014H4V16.992H8.311C12.833 16.992 12.756 12.458 10.448 11.618V11.618ZM19.935 12.22C19.661 10.457 18.406 9.27 16.352 9.27C14.257 9.27 13 10.61 13 13.217C13 15.848 14.368 17 16.417 17C18.465 17 19.523 15.865 19.817 15H17.705C16.968 15.855 14.812 15.521 14.938 13.647H19.997C20.007 13.013 19.986 12.558 19.935 12.22V12.22Z" 
+                        />
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <a href="#sphereScreen" class="aboutLink flex items-center text-sm  hover:text-black  mt-4 md:mt-0 ">
+                        About & Services
+                        <svg xmlns="http://www.w3.org/2000/svg" class="rightArrow h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- Water Waves -->
+        <div class="wavesContainer">
+            <svg class="waveBottom" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <defs></defs>
+                <path id="waveBottom"  d=""/>
+            </svg>
+
+            <svg class="waveMiddle" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <defs></defs>
+                <path id="waveMiddle" d=""/>
+            </svg>
+
+            <svg class="waveTop" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <defs></defs>
+                <path id="waveTop" d=""/>
+            </svg>
+        </div>
+        <lottie-player 
+            class="surfAnim"
+            src="/scripts/surf.json"  
+            background="transparent"  
+            speed="1"  
+            
+            loop autoplay
+        ></lottie-player>
+        <!-- Text Intro -->
+        <div class="container text-center textContainer md:text-left px-6  md:pl-16 mt-8">
+            <div class="name-intro text-xs md:text-base flex items-center justify-center md:justify-start">
+                <span class="  ">I'm Charlis Doley</span>
+                <div class="ruler mx-2"></div>
+                <span class="  font-light">Available for freelance work</span>
+            </div>
+            <h1 class="font-bold text-3xl md:text-5xl ">
+                I’m a Freelance <br> Web Guru  <br> turning your website  <br> smooth like water
+            </h1>
+            <h2 class="text-xs mt-8  md:text-sm font-light">
+                I help companies to develop digital products and turn ideas into a functional and <br>
+                delightful experience. I’m focusing on working on interface and digital experience <br>
+                on website and apps.
+            </h2>
+        </div>
+
+        <!-- Email To -->
+        <div class="flex email" onclick="copyEmail()">
+            <span class="border p-4">
+                <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.25 9L15.4275 14.9175C15.8931 15.1642 16.4403 15.2958 17 15.2958C17.5597 15.2958 18.1069 15.1642 18.5725 14.9175L29.75 9M7.08333 21.375H26.9167C27.6681 21.375 28.3888 21.1379 28.9201 20.716C29.4515 20.294 29.75 19.7217 29.75 19.125V7.875C29.75 7.27826 29.4515 6.70597 28.9201 6.28401C28.3888 5.86205 27.6681 5.625 26.9167 5.625H7.08333C6.33189 5.625 5.61122 5.86205 5.07986 6.28401C4.54851 6.70597 4.25 7.27826 4.25 7.875V19.125C4.25 19.7217 4.54851 20.294 5.07986 20.716C5.61122 21.1379 6.33189 21.375 7.08333 21.375Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+            <input id="emailToCopy" type="text" value="charles.doley1@gmail.com" class="border p-4 hidden md:block"></input>
+        </div>
+    </div>
+
+    <!-- SkillSphere Screen -->
+    <div class="sphereScreenContainer px-16 p-6" id="sphereScreen">
+        <h2 class="text-5xl font-bold mt-24 capitalize">Check out my <br>SkillSphere</h2>
+        <p class="mt-8 text-sm font-light w-1/2">
+            I'm a UI Developer located in Hyderabad, India. I have a serious passion for
+            UI effects, animations and creating intuitive, dynamic user experience.
+            <br><br>
+            Well-organized person, problem solver, independent employee with high 
+            attention to detail. I have been working for more than 3 years professionally 
+            as a Software Developer and have completed around 15 projects.
+            <br><br>
+            Interested in the entire frontend spectrum and working on ambitious
+            projects with positive people.
+            <br><br>
+            <span style="color: #0063FF;">Let’s Keep It Crispy.</span>
+        </p>
+    </div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="/scripts/wavify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/scripts/index.js"></script>
+</body>
+</html>

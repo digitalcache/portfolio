@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,700&display=swap');
+
+$blue: #0063FF;
+$black: #000;
+$white: #fff;
+$mobile: 768px;
+$tablet: 1024px;
+$lowResLaptopWidth: 1300px;
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color:$white;
+    max-height: 100vw;
+    overflow-x: hidden;
+    background: linear-gradient(90deg, #393939 0%, #060606 16.29%, #000000 66.54%);
+}
+.mainContainer{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    @media screen and (max-width: $tablet) {
+        .nav-mobile{
+            display: none;
+        }
+    }
+    .surfAnim {
+        position: absolute;
+        right:0;
+        width: 600px;
+        height: 600px;
+        top:50%;
+        transform: translateY(-30%);
+        @media screen and (max-width: $tablet) {
+           width: 400px;
+           height: 400px;
+           top: 75%;
+           right:0;
+        }
+        @media screen and (max-width: $mobile) {
+            width: 300px;
+            height: 300px;
+            top: 82%;
+            right:0;
+         }
+    }
+   
+    .link:hover {
+        transform: scale(1.1);
+    }
+    .link path {
+        fill: $white;
+    }
+    .link:hover path {
+        fill: $blue;
+    }
+    .aboutLink{
+        .rightArrow {
+            animation-name: rightArrowOnReleaseHover;
+            animation-duration: 0.2s;
+            animation-timing-function: linear;
+            animation-fill-mode: both;
+        }
+    }
+    .aboutLink:hover {
+        .rightArrow {
+            animation-name: rightArrowOnHover;
+            animation-duration: 0.2s;
+            animation-timing-function: linear;
+            animation-fill-mode: both;
+        }
+    }
+    @keyframes rightArrowOnHover {
+        from {transform: translateX(0px);}
+        to {transform: translateX(10px);}
+    }
+    @keyframes rightArrowOnReleaseHover {
+        from {transform: translateX(10px);}
+        to {transform: translateX(0px);}
+    }
+    .textContainer {
+        max-width: 60%;
+        @media screen and (max-width: 768px) {
+            max-width: 100%;
+        }
+        position: absolute;
+        top: 15%;
+        .name-intro {
+            color: $blue;
+        }
+        .ruler {
+            background-color: $blue;
+            width: 30px;
+            @media screen and (max-width: $tablet) {
+                width: 15px;
+            }
+            height: 0.1px;
+        }
+        h1 {
+            margin-top:5%;
+            text-transform: capitalize;
+            line-height: 4rem;
+            @media screen and (max-width: $mobile) {
+                line-height: 2rem;
+            }
+            br {
+                @media screen and (min-width: $mobile) {
+                    display: none;
+                }
+            }
+        }
+        h2 {
+            br {
+                @media screen and (max-width: $tablet) {
+                    display: none;
+                }
+            }
+        }
+    }
+    .email {
+        position: absolute;
+        top:100vh;
+        left:50%;
+        transform: translate(-50%,-100%);
+        cursor: text;
+        @media screen and (max-width: $mobile) {
+            top:80vh;
+        }
+        input {
+            pointer-events: none;
+            background: none;
+            font-size: 16px;
+            width:250px;
+            outline: none;
+        }
+        &::after {
+            @media screen and (max-width: $mobile) {
+                display: none;
+            }
+            position: absolute;
+            top:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left:0;
+            width: 100%;
+            height: 100%;
+            content: 'Click to Copy!';
+            pointer-events: none;
+            background: rgba($color: $blue, $alpha: 0.8);
+        }
+        
+    }
+    .email:hover {
+        &::after {
+            animation-name: emailOverlay;
+            animation-duration: 0.2s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+        }
+    }
+    @keyframes emailOverlay {
+        from {top: 100%;}
+        to {top: 0%;}
+    }
+    .wavesContainer {
+        .waveBottom {
+            position: absolute;
+            top:0%;
+            right:-45%;
+            transform: rotateZ(-90deg) ;
+            z-index: -1;
+        }
+        .waveMiddle {
+            position: absolute;
+            top:0%;
+            right:-47%;
+            transform:  rotateZ(-90deg);
+            z-index: -1;
+        }
+        .waveTop {
+            position: absolute;
+            top:0%;
+            right:-50%;
+            transform:  rotateZ(-90deg);
+            z-index: -1;
+        }
+        @media screen and (min-width: $lowResLaptopWidth) {
+            .waveBottom {
+                right:-50%;
+            }
+            .waveMiddle {
+                right:-52%;
+            }
+            .waveTop {
+                right:-55%;
+            }
+        }
+        @media screen and (max-width: $mobile) {
+            .waveBottom {
+                position: absolute;
+                top:70%;
+                left:0%;
+                transform: rotateZ(0deg) ;
+                z-index: -1;
+            }
+            .waveMiddle {
+                position: absolute;
+                top:75%;
+                left: 0;
+                transform:  rotateZ(0deg);
+                z-index: -1;
+            }
+            .waveTop {
+                position: absolute;
+                top:80%;
+                left:0;
+                transform:  rotateZ(0deg);
+                z-index: -1;
+            }
+        }
+    }
+}
+
+.sphereScreenContainer {
+    height: 100vh;
+    h2 {
+        color: $blue;
+    }
+}

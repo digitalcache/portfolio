@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  max-height: 100vw;
+  overflow-x: hidden;
+  background: -webkit-gradient(linear, left top, right top, from(#393939), color-stop(16.29%, #060606), color-stop(66.54%, #000000));
+  background: linear-gradient(90deg, #393939 0%, #060606 16.29%, #000000 66.54%);
+}
+
+.mainContainer {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  .mainContainer .nav-mobile {
+    display: none;
+  }
+}
+
+.mainContainer .surfAnim {
+  position: absolute;
+  right: 0;
+  width: 600px;
+  height: 600px;
+  top: 50%;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+}
+
+@media screen and (max-width: 1024px) {
+  .mainContainer .surfAnim {
+    width: 400px;
+    height: 400px;
+    top: 75%;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainContainer .surfAnim {
+    width: 300px;
+    height: 300px;
+    top: 82%;
+    right: 0;
+  }
+}
+
+.mainContainer .link:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.mainContainer .link path {
+  fill: #fff;
+}
+
+.mainContainer .link:hover path {
+  fill: #0063FF;
+}
+
+.mainContainer .aboutLink .rightArrow {
+  -webkit-animation-name: rightArrowOnReleaseHover;
+          animation-name: rightArrowOnReleaseHover;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.mainContainer .aboutLink:hover .rightArrow {
+  -webkit-animation-name: rightArrowOnHover;
+          animation-name: rightArrowOnHover;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes rightArrowOnHover {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes rightArrowOnHover {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@-webkit-keyframes rightArrowOnReleaseHover {
+  from {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes rightArrowOnReleaseHover {
+  from {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.mainContainer .textContainer {
+  max-width: 60%;
+  position: absolute;
+  top: 15%;
+}
+
+@media screen and (max-width: 768px) {
+  .mainContainer .textContainer {
+    max-width: 100%;
+  }
+}
+
+.mainContainer .textContainer .name-intro {
+  color: #0063FF;
+}
+
+.mainContainer .textContainer .ruler {
+  background-color: #0063FF;
+  width: 30px;
+  height: 0.1px;
+}
+
+@media screen and (max-width: 1024px) {
+  .mainContainer .textContainer .ruler {
+    width: 15px;
+  }
+}
+
+.mainContainer .textContainer h1 {
+  margin-top: 5%;
+  text-transform: capitalize;
+  line-height: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .mainContainer .textContainer h1 {
+    line-height: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mainContainer .textContainer h1 br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .mainContainer .textContainer h2 br {
+    display: none;
+  }
+}
+
+.mainContainer .email {
+  position: absolute;
+  top: 100vh;
+  left: 50%;
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+  cursor: text;
+}
+
+@media screen and (max-width: 768px) {
+  .mainContainer .email {
+    top: 80vh;
+  }
+}
+
+.mainContainer .email input {
+  pointer-events: none;
+  background: none;
+  font-size: 16px;
+  width: 250px;
+  outline: none;
+}
+
+.mainContainer .email::after {
+  position: absolute;
+  top: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: 'Click to Copy!';
+  pointer-events: none;
+  background: rgba(0, 99, 255, 0.8);
+}
+
+@media screen and (max-width: 768px) {
+  .mainContainer .email::after {
+    display: none;
+  }
+}
+
+.mainContainer .email:hover::after {
+  -webkit-animation-name: emailOverlay;
+          animation-name: emailOverlay;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes emailOverlay {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0%;
+  }
+}
+
+@keyframes emailOverlay {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0%;
+  }
+}
+
+.mainContainer .wavesContainer .waveBottom {
+  position: absolute;
+  top: 0%;
+  right: -45%;
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+  z-index: -1;
+}
+
+.mainContainer .wavesContainer .waveMiddle {
+  position: absolute;
+  top: 0%;
+  right: -47%;
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+  z-index: -1;
+}
+
+.mainContainer .wavesContainer .waveTop {
+  position: absolute;
+  top: 0%;
+  right: -50%;
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+  z-index: -1;
+}
+
+@media screen and (min-width: 1300px) {
+  .mainContainer .wavesContainer .waveBottom {
+    right: -50%;
+  }
+  .mainContainer .wavesContainer .waveMiddle {
+    right: -52%;
+  }
+  .mainContainer .wavesContainer .waveTop {
+    right: -55%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainContainer .wavesContainer .waveBottom {
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+    z-index: -1;
+  }
+  .mainContainer .wavesContainer .waveMiddle {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+    z-index: -1;
+  }
+  .mainContainer .wavesContainer .waveTop {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+    z-index: -1;
+  }
+}
+
+.sphereScreenContainer {
+  height: 100vh;
+}
+
+.sphereScreenContainer h2 {
+  color: #0063FF;
+}
+/*# sourceMappingURL=index.css.map */
