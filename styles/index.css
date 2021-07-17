@@ -329,9 +329,19 @@ body {
 
 .sphereScreenContainer {
   height: 100vh;
+  position: relative;
 }
 
 .sphereScreenContainer h2 {
+  color: #0063FF;
+}
+
+.sphereScreenContainer .sphereContent {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   color: #0063FF;
 }
 /*# sourceMappingURL=index.css.map */

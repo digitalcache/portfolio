@@ -26,7 +26,6 @@ var myWave = wavify( document.querySelector('#waveTop'), {
     color: '#0044FF',
     // speed: 0.2
 })
-// have to reduce bones for mobile device only
 
 
 function copyEmail() {
@@ -37,3 +36,15 @@ function copyEmail() {
         window.open('mailto:charles.doley1@gmail.com');
     }
 }
+var sphereTexts = [
+    'Animation', 'Interaction', 'JavaScript',
+    'CSS3', 'HTML5', 'React',
+    'Redux', 'Figma', 'Photoshop',
+    'Material UI', 'Illustrator', 'NodeJs', 'Next JS', 'AnimeJs', 'GSAP', 'API'
+];
+sphereOptions = {
+    radius: 200,
+    maxSpeed: 'fast',
+    initSpeed: 'fast'
+};
+var tc = TagCloud('.sphereContent', sphereTexts, sphereOptions);

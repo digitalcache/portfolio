@@ -225,7 +225,15 @@ body {
 
 .sphereScreenContainer {
     height: 100vh;
+    position: relative;
     h2 {
+        color: $blue;
+    }
+    .sphereContent{
+        position: absolute;
+        right: 10%;
+        top:50%;
+        transform: translateY(-50%);
         color: $blue;
     }
 }
