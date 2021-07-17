@@ -12,6 +12,12 @@ body {
   background: linear-gradient(90deg, #393939 0%, #060606 16.29%, #000000 66.54%);
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    background: #000;
+  }
+}
+
 .mainContainer {
   height: 100vh;
   overflow: hidden;

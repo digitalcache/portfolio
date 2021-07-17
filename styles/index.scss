@@ -15,6 +15,9 @@ body {
     max-height: 100vw;
     overflow-x: hidden;
     background: linear-gradient(90deg, #393939 0%, #060606 16.29%, #000000 66.54%);
+    @media screen and (max-width: $mobile) {
+        background: $black;
+    }
 }
 .mainContainer{
     height: 100vh;
