@@ -230,7 +230,7 @@ body {
     height: 100vh;
     position: relative;
     h2 {
-        color: $blue;
+        // color: $blue;
     }
     .sphereContent{
         position: absolute;
@@ -238,5 +238,13 @@ body {
         top:50%;
         transform: translateY(-50%);
         color: $blue;
+        @media screen and (max-width: $mobile) {
+            top:20%;
+            right:50%;
+            transform: translateX(50%);
+        }
+    }
+    p {
+
     }
 }

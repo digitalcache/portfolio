@@ -338,10 +338,6 @@ body {
   position: relative;
 }
 
-.sphereScreenContainer h2 {
-  color: #0063FF;
-}
-
 .sphereScreenContainer .sphereContent {
   position: absolute;
   right: 10%;
@@ -349,5 +345,14 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   color: #0063FF;
+}
+
+@media screen and (max-width: 768px) {
+  .sphereScreenContainer .sphereContent {
+    top: 20%;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
 }
 /*# sourceMappingURL=index.css.map */

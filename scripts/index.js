@@ -43,8 +43,8 @@ var sphereTexts = [
     'Material UI', 'Illustrator', 'NodeJs', 'Next JS', 'AnimeJs', 'GSAP', 'API'
 ];
 sphereOptions = {
-    radius: 200,
-    maxSpeed: 'fast',
-    initSpeed: 'fast'
+    radius: mobile ? 100 : 200,
 };
 var tc = TagCloud('.sphereContent', sphereTexts, sphereOptions);
+
+// custom scroll bar
