@@ -50,14 +50,12 @@ body {
             .board {
                 box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.18);
             }
-           
         }
     }
-
      @media screen and (max-width: $mobile) {
          .surf {
             left:50%;
-            top:90%;
+            top:85%;
             .surfVector{
                 width: 60px;
                 height: 60px;
@@ -269,8 +267,21 @@ body {
         overflow: hidden;
         border-radius: 12px;
         width: 33.3%;
-        img {
-
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            top:0;
+            left:0;
+            transform: translateY(400px);
+            height: 100%;
+            background: rgba($color:$blue, $alpha: 0.8);
+        }
+        &:hover {
+            &::after{
+                transform: translateY(0px);
+                transition: transform 1s ease-in-out;
+            }
         }
     }
 }
