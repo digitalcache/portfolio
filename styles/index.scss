@@ -138,7 +138,7 @@ body {
         transform: translate(-50%,-100%);
         cursor: text;
         @media screen and (max-width: $mobile) {
-            top:80vh;
+            top:75vh;
         }
         input {
             pointer-events: none;

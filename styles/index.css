@@ -214,7 +214,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .mainContainer .email {
-    top: 80vh;
+    top: 75vh;
   }
 }
 
