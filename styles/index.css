@@ -8,8 +8,8 @@ body {
   color: #fff;
   max-height: 100vw;
   overflow-x: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(#393939), color-stop(16.29%, #060606), color-stop(66.54%, #000000));
-  background: linear-gradient(90deg, #393939 0%, #060606 16.29%, #000000 66.54%);
+  background: -webkit-gradient(linear, left top, right top, from(#141414), color-stop(16.29%, #060606), color-stop(66.54%, #000000));
+  background: linear-gradient(90deg, #141414 0%, #060606 16.29%, #000000 66.54%);
 }
 
 @media screen and (max-width: 768px) {
@@ -37,38 +37,40 @@ body {
 @media screen and (max-width: 768px) {
   .mainContainer .logo {
     position: absolute;
-    top: 20px;
+    height: 40px;
+    top: 40px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
 }
 
-.mainContainer .surfAnim {
+.mainContainer .surf {
   position: absolute;
-  right: 0;
-  width: 600px;
-  height: 600px;
+  right: 10%;
   top: 50%;
   -webkit-transform: translateY(-30%);
           transform: translateY(-30%);
 }
 
-@media screen and (max-width: 1024px) {
-  .mainContainer .surfAnim {
-    width: 400px;
-    height: 400px;
-    top: 75%;
-    right: 0;
-  }
+.mainContainer .surf .surfVector {
+  width: 100px;
+  height: 100px;
+}
+
+.mainContainer .surf .surfVector .board {
+  -webkit-box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.18);
+          box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.18);
 }
 
 @media screen and (max-width: 768px) {
-  .mainContainer .surfAnim {
-    width: 300px;
-    height: 300px;
-    top: 82%;
-    right: 0;
+  .mainContainer .surf {
+    left: 50%;
+    top: 90%;
+  }
+  .mainContainer .surf .surfVector {
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -368,5 +370,19 @@ body {
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
   }
+}
+
+.workContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.workContainer figure {
+  margin-right: 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  width: 33.3%;
 }
 /*# sourceMappingURL=index.css.map */
