@@ -28,6 +28,16 @@ body {
             display: none;
         }
     }
+    .logo {
+        height: 60px;
+        @media screen and (max-width: $mobile) {
+                // display: none;
+                position: absolute;
+                top:20px;
+                left: 50%;
+                transform: translateX(-50%);
+        }
+    }
     .surfAnim {
         position: absolute;
         right:0;

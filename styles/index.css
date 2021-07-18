@@ -30,6 +30,20 @@ body {
   }
 }
 
+.mainContainer .logo {
+  height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .mainContainer .logo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
 .mainContainer .surfAnim {
   position: absolute;
   right: 0;
