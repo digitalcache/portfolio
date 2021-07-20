@@ -8,10 +8,12 @@ html {
 }
 
 ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px black;
   -webkit-box-shadow: inset 0 0 6px black;
 }
 
 ::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px black;
   -webkit-box-shadow: inset 0 0 6px black;
 }
 
@@ -28,6 +30,80 @@ body {
   body {
     background: #000;
   }
+}
+
+.lang-selector {
+  position: fixed;
+  bottom: 10px;
+  right: 2%;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Rounded sliders */
+}
+
+.lang-selector .switch {
+  margin-left: 10px;
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+}
+
+.lang-selector .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.lang-selector .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.lang-selector .slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.lang-selector input:checked + .slider {
+  background-color: #464646;
+}
+
+.lang-selector input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #464646;
+          box-shadow: 0 0 1px #464646;
+}
+
+.lang-selector input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+.lang-selector .slider.round {
+  border-radius: 17px;
+}
+
+.lang-selector .slider.round:before {
+  border-radius: 50%;
 }
 
 .mainContainer {

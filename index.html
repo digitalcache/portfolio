@@ -26,6 +26,14 @@
     <meta name="twitter:image" content="https://digitalcache.github.io/portfolio/images/portfolio-image.jpg" />
 </head>
 <body>
+    <!-- Language selector -->
+    <div class="lang-selector">
+        <span class="text-xs" id="language"></span>
+        <label class="switch">
+            <input id="lang-select" type="checkbox">
+            <span class="slider round"></span>
+        </label> 
+    </div>
     <!-- Intro Screen -->
     <div class="mainContainer">
         <!-- Navigation Bar -->
@@ -68,7 +76,7 @@
                 </div>
                 <div>
                     <a href="#sphereScreen" class="aboutLink flex items-center text-sm  hover:text-black  mt-4 md:mt-0 ">
-                        About & Services
+                        <span id="about_service"></span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="rightArrow h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
@@ -123,17 +131,13 @@
         </div>
         <div class="container text-center textContainer md:text-left px-6  md:pl-16 mt-8">
             <div class="name-intro text-xs md:text-base flex items-center justify-center md:justify-start">
-                <span class="  ">I'm Charlis Doley</span>
+                <span id="text1"></span>
                 <div class="ruler mx-2"></div>
-                <span class="  font-light">Available for freelance work</span>
+                <span id="text2" class="font-light"></span>
             </div>
-            <h1 class="font-bold text-3xl md:text-5xl ">
-                I’m a Freelance <br> Web Guru  <br> turning your website  <br> smooth like water
+            <h1 id="h1" class="font-bold text-3xl md:text-5xl ">
             </h1>
-            <h2 class="introDescription text-xs mt-8  md:text-sm font-light">
-                I help companies to develop digital products and turn ideas into a functional and <br>
-                delightful experience. I’m focusing on working on interface and digital experience <br>
-                on website and apps.
+            <h2 id="h2" class="introDescription text-xs mt-8  md:text-sm font-light">
             </h2>
         </div>
 
@@ -150,19 +154,11 @@
 
     <!-- SkillSphere Screen -->
     <div class="sphereScreenContainer p-6 lg:px-16" id="sphereScreen">
-        <h2 class="text-3xl md:text-5xl font-bold mt-4 text-center md:text-left md:mt-16 capitalize">Check out my <br>SkillSphere</h2>
+        <h2 id="text3" class="text-3xl md:text-5xl font-bold mt-4 text-center md:text-left md:mt-16 capitalize"></h2>
         <p class="md:mt-8 mt-64 pt-12 md:pt-0 text-xs leading-5 md:leading-6 md:text-sm font-light md:w-1/2 text-center md:text-left ">
-            I'm a UI Developer located in Hyderabad, India. I have a serious passion for
-            UI effects, animations and creating intuitive, dynamic user experience.
-            <br><br>
-            Well-organized person, problem solver, independent employee with high 
-            attention to detail. I have been working for more than 3 years professionally 
-            as a Software Developer and have completed around 15 projects.
-            <br><br>
-            Interested in the entire frontend spectrum and working on ambitious
-            projects with positive people.
-            <br><br>
-            <span style="color: #0063FF;">Let’s Keep It Crispy.</span>
+            <span id="text4">
+            </span>
+            <span id="text5" style="color: #0063FF;"></span>
         </p>
         <div class="sphereContent md:text-2xl">
             <!-- sphere content -->
@@ -171,10 +167,10 @@
 
     <!-- My Works -->
     <div class="px-16 flex items-center flex-col">
-        <h2 class="text-3xl mb-16 md:text-5xl font-bold mt-4 text-center md:text-left md:mt-16 capitalize">Check out my Works</h2>
+        <h2 id="worksTitle" class="text-3xl mb-16 md:text-5xl font-bold mt-4 text-center md:text-left md:mt-16 capitalize"></h2>
         <div class="workContainer">
             <figure class="card">
-                <img src="images/social-ape.jpg">
+                <img alt="Social App with firebase" src="images/social-ape.jpg">
                 <figcaption>
                     <p class="px-4 text-center">Social Ape UI<br><span class="text-xs">HTML, CSS, Material UI, React, Redux, Firestore</span></p>
                     <a target="_blank" href="https://socialape-f45ad.firebaseapp.com/">
@@ -188,7 +184,7 @@
                 </figcaption>
             </figure>
             <figure class="card">
-                <img src="images/slick-card-animation.jpg">
+                <img alt="Slick Card Animation with GSAP" src="images/slick-card-animation.jpg">
                 <figcaption>
                     <p class="px-4 text-center">Slick Card Animation<br><span class="text-xs">HTML, CSS, JS, GSAP</span></p>
                     <a target="_blank" href="https://digitalcache.github.io/gsap-slick-animation-card-elements/">
@@ -202,7 +198,7 @@
                 </figcaption>
             </figure>
             <figure class="card">
-                <img src="images/submit-button-animation.jpg">
+                <img alt="Submit button Animation using AnimeJS" src="images/submit-button-animation.jpg">
                 <figcaption>
                     <p class="px-4 text-center">Submit Button Animation<br><span class="text-xs">HTML, CSS, JS, AnimeJS</span></p>
                     <a target="_blank" href="https://digitalcache.github.io/submit-button-animejs/">
@@ -216,7 +212,7 @@
                 </figcaption>
             </figure>
             <figure class="card">
-                <img src="images/minimalist-typewriter.jpg">
+                <img alt="Type Writer Animation" src="images/minimalist-typewriter.jpg">
                 <figcaption>
                     <p class="px-4 text-center">Type Writer Animation<br><span class="text-xs">HTML, CSS, JS</span></p>
                     <a target="_blank" href="https://digitalcache.github.io/typewriter-effect-minimalist-email-client-ui/">
@@ -230,7 +226,7 @@
                 </figcaption>
             </figure>
             <figure class="card">
-                <img src="images/flip-card-anim.jpg">
+                <img alt="Flip Card Animation using AnimeJS" src="images/flip-card-anim.jpg">
                 <figcaption>
                     <p class="px-4 text-center">Flip Card Animation<br><span class="text-xs">HTML, CSS, JS, AnimeJS</span></p>
                     <a target="_blank" href="https://digitalcache.github.io/glassmorphism-card-flip-animejs/">
@@ -244,7 +240,7 @@
                 </figcaption>
             </figure>
             <figure class="card">
-                <img src="images/landing-page-animation.jpg">
+                <img alt="Landing Page Animation" src="images/landing-page-animation.jpg">
                 <figcaption>
                     <p class="px-4 text-center">Landing Page Animations<br><span class="text-xs">HTML, CSS, JS, AnimeJS</span></p>
                     <a target="_blank" href="https://digitalcache.github.io/landing-page-intro-animations/">
@@ -258,7 +254,7 @@
                 </figcaption>
             </figure>
             <figure class="card">
-                <img src="images/floating-social-button.jpg">
+                <img alt="Floating Social Button using Glassmorphism" src="images/floating-social-button.jpg">
                 <figcaption>
                     <p class="px-4 text-center">Floating Social Button with Glassmorphism<br><span class="text-xs">HTML, CSS, JS, AnimeJS</span></p>
                     <a target="_blank" href="https://digitalcache.github.io/floating-social-buttons-glassmorphism/">
@@ -272,7 +268,7 @@
                 </figcaption>
             </figure>
             <figure class="card">
-                <img src="images/glassmorphism-moving-spheres.jpg">
+                <img alt="Glassmorphism moving circles login form" src="images/glassmorphism-moving-spheres.jpg">
                 <figcaption>
                     <p class="px-4 text-center">Glassmorphism Moving Circles<br><span class="text-xs">HTML, CSS</span></p>
                     <a target="_blank" href="https://digitalcache.github.io/glassmorphism-moving-circles-login-form/">
@@ -286,7 +282,7 @@
                 </figcaption>
             </figure>
             <figure class="card">
-                <img src="images/moving-dots-animation.jpg">
+                <img alt="Moving Dots Animation using GSAP" src="images/moving-dots-animation.jpg">
                 <figcaption>
                     <p class="px-4 text-center">Moving Dots GSAP<br><span class="text-xs">HTML, CSS, JS, GSAP</span></p>
                     <a target="_blank" href="https://digitalcache.github.io/color-dots-loader-animejs/">
@@ -300,7 +296,7 @@
                 </figcaption>
             </figure>
             <figure class="card">
-                <img src="images/visualizer-animation.jpg">
+                <img alt="Visualizer Animation using animejs" src="images/visualizer-animation.jpg">
                 <figcaption>
                     <p class="px-4 text-center">Visualizer Animation<br><span class="text-xs">HTML, CSS, JS, AnimeJS</span></p>
                     <a target="_blank" href="https://digitalcache.github.io/awesome-background-animation-animejs/">
@@ -314,7 +310,7 @@
                 </figcaption>
             </figure>
             <figure class="card">
-                <img src="images/animated-color-boxes.jpg">
+                <img alt="Animated Colored Boxes" src="images/animated-color-boxes.jpg">
                 <figcaption>
                     <p class="px-4 text-center">Animated Colored Boxes<br><span class="text-xs">HTML, CSS, JS, AnimeJS</span></p>
                     <a target="_blank" href="https://digitalcache.github.io/animated-color-boxes/">
@@ -328,7 +324,7 @@
                 </figcaption>
             </figure>
             <figure class="card">
-                <img src="images/planets-animation.jpg">
+                <img alt="Animated Planets" src="images/planets-animation.jpg">
                 <figcaption>
                     <p class="px-4 text-center">Animated Planets<br><span class="text-xs">HTML, CSS, JS, SwiperJS</span></p>
                     <a target="_blank" href="https://digitalcache.github.io/animated-planet-slides/">
@@ -342,7 +338,7 @@
                 </figcaption>
             </figure>
             <figure class="card">
-                <img src="images/resp-recipe-app.jpg">
+                <img alt="Responsive recipe App" src="images/resp-recipe-app.jpg">
                 <figcaption>
                     <p class="px-4 text-center">Responsive Recipe App from API<br><span class="text-xs">HTML, CSS, JS, REST, JSON</span></p>
                     <a target="_blank" href="https://digitalcache.github.io/recipe-app-responsive/">
@@ -356,7 +352,7 @@
                 </figcaption>
             </figure>
             <figure class="card">
-                <img src="images/svg-anim.jpg">
+                <img alt="GSAP SVG Animation" src="images/svg-anim.jpg">
                 <figcaption>
                     <p class="px-4 text-center">GSAP SVG Animation<br><span class="text-xs">HTML, CSS, JS, GSAP</span></p>
                     <a target="_blank" href="https://digitalcache.github.io/gsap-svg-animation/">
@@ -370,7 +366,7 @@
                 </figcaption>
             </figure>
             <figure class="card">
-                <img src="images/shoe-gallery.jpg">
+                <img alt="3D Shoe Gallery" src="images/shoe-gallery.jpg">
                 <figcaption>
                     <p class="px-4 text-center">3D Shoe Gallery<br><span class="text-xs">HTML, CSS, JS</span></p>
                     <a target="_blank" href="https://digitalcache.github.io/3DProductViewer/">
@@ -384,7 +380,7 @@
                 </figcaption>
             </figure>
             <figure class="card">
-                <img src="images/new-year-count.jpg">
+                <img alt="New Year Countdown" src="images/new-year-count.jpg">
                 <figcaption>
                     <p class="px-4 text-center">New Year Countdown<br><span class="text-xs">HTML, CSS, JS</span></p>
                     <a target="_blank" href="https://digitalcache.github.io/countdown-newyear/">
@@ -398,7 +394,7 @@
                 </figcaption>
             </figure>
             <figure class="card">
-                <img src="images/gsap-landing-anim.jpg">
+                <img alt="Landing Page Animation with GSAP" src="images/gsap-landing-anim.jpg">
                 <figcaption>
                     <p class="px-4 text-center">Landing Page Animation with GSAP<br><span class="text-xs">HTML, CSS, JS, GSAP</span></p>
                     <a target="_blank" href="https://digitalcache.github.io/gsap-xalato/">
@@ -412,7 +408,7 @@
                 </figcaption>
             </figure>
             <figure class="card">
-                <img src="images/tv-maze.jpg">
+                <img alt="Data over REST API" src="images/tv-maze.jpg">
                 <figcaption>
                     <p class="px-4 text-center">Data over REST API<br><span class="text-xs">HTML, CSS, JS, React, Redux</span></p>
                     <a target="_blank" href="https://digitalcache.github.io/tv-maze-static/">
@@ -426,7 +422,7 @@
                 </figcaption>
             </figure>
             <figure class="card">
-                <img src="images/animated-eco-landing.jpg">
+                <img alt="Animated Landing Page" src="images/animated-eco-landing.jpg">
                 <figcaption>
                     <p class="px-4 text-center">Animated Landing Page<br><span class="text-xs">HTML, CSS</span></p>
                     <a target="_blank" href="https://digitalcache.github.io/animated-eco-landing-page/">
@@ -440,7 +436,7 @@
                 </figcaption>
             </figure>
             <figure class="card">
-                <img src="images/custom-select-list.jpg">
+                <img alt="Custom Select List" src="images/custom-select-list.jpg">
                 <figcaption>
                     <p class="px-4 text-center">Custom Select List<br><span class="text-xs">HTML, CSS, JS</span></p>
                     <a target="_blank" href="https://digitalcache.github.io/select-list-js-custom/">
@@ -454,7 +450,7 @@
                 </figcaption>
             </figure>
             <figure class="card">
-                <img src="images/react-neo-calc.jpg">
+                <img alt="React Neumorphism Calculator" src="images/react-neo-calc.jpg">
                 <figcaption>
                     <p class="px-4 text-center">React Neumorphism Calculator<br><span class="text-xs">HTML, SCSS, React</span></p>
                     <a target="_blank" href="https://digitalcache.github.io/react-neumorphism-calculator/">
@@ -468,7 +464,7 @@
                 </figcaption>
             </figure>
             <figure class="card">
-                <img src="images/todolist-react.jpg">
+                <img alt="Todo List" src="images/todolist-react.jpg">
                 <figcaption>
                     <p class="px-4 text-center">Todo List<br><span class="text-xs">HTML, SCSS, React, Redux</span></p>
                     <a target="_blank" href="https://digitalcache.github.io/todo-app-react-static/">
@@ -482,7 +478,7 @@
                 </figcaption>
             </figure>
             <figure class="card">
-                <img src="images/codepen-react.jpg">
+                <img alt="Custom Code Pen with React" src="images/codepen-react.jpg">
                 <figcaption>
                     <p class="px-4 text-center">Custom Code Pen with React<br><span class="text-xs">HTML, SCSS, React</span></p>
                     <a target="_blank" href="https://digitalcache.github.io/codepen-react-static/">
@@ -497,6 +493,7 @@
             </figure>
         </div>
     </div>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script src="scripts/wavify.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
