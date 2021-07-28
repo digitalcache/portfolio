@@ -38,6 +38,13 @@ body {
     z-index: 10;
     display: flex;
     align-items: center;
+    @media screen and (max-width: $mobile) {
+        bottom: 96%;
+        top: 10px;
+        #language {
+            font-size: 10px;
+        }
+    }
     .switch {
         margin-left:10px;
         position: relative;
@@ -336,16 +343,27 @@ body {
     }
   
 }
+.responsive-column{
+   
+    @media screen and (max-width: $mobile) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 .workContainer {
 
     .swiper-container {
         width: 100%;
         padding-top: 80px;
-        height: 100vh;
+        height: 80vh;
         margin-left: 0;
         margin-right: 0;
-
+        @media screen and (max-width: $mobile) {
+            padding-top: 0;
+            height: 100%;
+        }
     }
     figure {
         margin-right: 40px;
@@ -393,7 +411,7 @@ body {
             button {
                 border: 2px solid $blue;
                 border-radius: 2rem;
-                padding: 3px 15px;
+                padding: 3px 10px;
                 padding-right: 0;
                 margin-top: 20px;
                 outline: none;
@@ -426,8 +444,10 @@ body {
     border-radius: 10px;
     background: $blue;
     margin: 4rem 0;
+    @media screen and (max-width: $mobile) {
+        margin: 1rem 0;
+    }
 }
-
 .listStyleGrid {
     list-style-type: none;
     display: grid;
@@ -470,6 +490,12 @@ body {
     -moz-scrollbar-width: none;
     -ms-scrollbar-width: none;
     scrollbar-width: none;
+    @media screen and (max-width: $mobile) {
+        flex-direction: column;
+        .text {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 .timeLineUL .background {
@@ -521,6 +547,9 @@ body {
     grid-template-columns: repeat(3,minmax(85px,220px));
     gap: 40px;
     padding: 40px 0 28px;
+    @media screen and (max-width: $mobile) {
+       display: initial;
+    }
 }
 
 .footer .section1 .content {
@@ -554,6 +583,10 @@ body {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    @media screen and (max-width: $mobile) {
+        margin-top: 20px;    
+        flex-direction: column;
+    }
 }
 
 .flexRow {

@@ -46,6 +46,16 @@ body {
   /* Rounded sliders */
 }
 
+@media screen and (max-width: 768px) {
+  .lang-selector {
+    bottom: 96%;
+    top: 10px;
+  }
+  .lang-selector #language {
+    font-size: 10px;
+  }
+}
+
 .lang-selector .switch {
   margin-left: 10px;
   position: relative;
@@ -459,12 +469,34 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .responsive-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .workContainer .swiper-container {
   width: 100%;
   padding-top: 80px;
-  height: 100vh;
+  height: 80vh;
   margin-left: 0;
   margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .workContainer .swiper-container {
+    padding-top: 0;
+    height: 100%;
+  }
 }
 
 .workContainer figure {
@@ -532,7 +564,7 @@ body {
 .workContainer figure figcaption button {
   border: 2px solid #0063FF;
   border-radius: 2rem;
-  padding: 3px 15px;
+  padding: 3px 10px;
   padding-right: 0;
   margin-top: 20px;
   outline: none;
@@ -572,6 +604,12 @@ body {
   border-radius: 10px;
   background: #0063FF;
   margin: 4rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .blueRuler {
+    margin: 1rem 0;
+  }
 }
 
 .listStyleGrid {
@@ -616,6 +654,18 @@ body {
   -moz-scrollbar-width: none;
   -ms-scrollbar-width: none;
   scrollbar-width: none;
+}
+
+@media screen and (max-width: 768px) {
+  .timeLineUL {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .timeLineUL .text {
+    margin-bottom: 20px;
+  }
 }
 
 .timeLineUL .background {
@@ -663,6 +713,12 @@ body {
   padding: 40px 0 28px;
 }
 
+@media screen and (max-width: 768px) {
+  .footer .section1 {
+    display: initial;
+  }
+}
+
 .footer .section1 .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -692,6 +748,16 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .bottomRow {
+    margin-top: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .flexRow {

@@ -13,11 +13,13 @@ const swiper = new Swiper('.swiper-container', {
     keyboard: {
         enabled: true,
     },
-    autoplay: {
-        delay: 5000,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    // },
     slidesPerView: mobile ? 1 : "auto",
-    slidesPerColumn: 2,
+    // slidesPerView:  "auto",
+
+    slidesPerColumn: mobile ? 1 : 2,
     spaceBetween: 30,
 });
 var languageMeta = {
