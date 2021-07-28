@@ -8,6 +8,7 @@
     <title>Charlis Doley - Web Guru</title>
     <link rel="stylesheet" href="styles/normalize.css" >
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/index.css" >
     <meta name="theme-color" content="black">
     <meta property="og:title" content="Charlis Doley - Web Guru" />
@@ -66,11 +67,29 @@
                             </g>
                         </svg>
                     </a>
-                    <!-- Behance Icon -->
-                    <a target="_blank" href="https://www.behance.net/charlisfre" class="link block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.003 12.333H14.985C15.274 10.356 17.887 10.618 18.003 12.333ZM8.261 13H6V15.01H8.228C10.264 15.01 10.139 13 8.261 13ZM8.181 9H6V11H8.389C10.062 11 10.327 9 8.181 9ZM24 0V24H0V0H24ZM14 8H19V7H14V8ZM10.448 11.618C12.355 10.644 12.285 7.068 8.635 7.014H4V16.992H8.311C12.833 16.992 12.756 12.458 10.448 11.618V11.618ZM19.935 12.22C19.661 10.457 18.406 9.27 16.352 9.27C14.257 9.27 13 10.61 13 13.217C13 15.848 14.368 17 16.417 17C18.465 17 19.523 15.865 19.817 15H17.705C16.968 15.855 14.812 15.521 14.938 13.647H19.997C20.007 13.013 19.986 12.558 19.935 12.22V12.22Z" 
-                        />
+                    <!-- Github Icon -->
+                    <a target="_blank" href="https://github.com/digitalcache" class="link block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white">
+                        <svg 
+                            width="24" height="24" viewBox="0 0 512.000000 512.000000"
+                            preserveAspectRatio="xMidYMid meet">
+                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                            fill="#000000" stroke="none">
+                            <path d="M59 5081 l-39 -39 0 -2482 0 -2482 39 -39 39 -39 853 0 c924 1 882
+                            -2 920 56 17 27 19 49 19 305 l0 276 -237 -1 c-203 -1 -248 2 -303 17 -115 33
+                            -189 75 -271 157 -66 66 -84 92 -143 210 -104 208 -150 266 -299 374 -88 64
+                            -112 100 -83 122 52 38 175 27 283 -26 82 -41 149 -102 229 -213 114 -157 206
+                            -239 326 -289 46 -19 71 -22 188 -23 106 0 147 4 190 19 123 42 117 35 160
+                            171 25 79 58 141 107 202 39 48 40 53 13 53 -48 0 -341 64 -437 95 -511 168
+                            -778 557 -800 1166 -12 312 55 543 220 758 55 73 55 68 22 241 -27 149 -12
+                            328 41 488 30 87 55 96 192 67 135 -28 228 -69 538 -236 l62 -33 138 26 c250
+                            49 289 53 554 53 264 0 304 -4 551 -52 l136 -26 74 36 c41 20 133 68 204 107
+                            149 80 247 116 357 130 79 10 114 4 135 -21 19 -24 62 -181 74 -274 13 -99 7
+                            -213 -18 -319 -8 -38 -13 -84 -10 -102 3 -19 40 -91 82 -161 90 -148 109 -189
+                            140 -303 39 -142 48 -227 43 -397 -6 -176 -24 -273 -83 -442 -158 -453 -427
+                            -661 -1000 -772 -93 -18 -172 -34 -174 -35 -2 -2 15 -27 37 -56 23 -30 55 -83
+                            71 -118 60 -128 63 -160 68 -665 2 -297 8 -470 15 -488 6 -15 24 -39 40 -52
+                            l30 -25 874 0 874 0 0 2521 0 2521 -39 39 -39 39 -2462 0 -2462 0 -39 -39z"/>
+                            </g>
                         </svg>
                     </a>
                 </div>
@@ -166,334 +185,559 @@
     </div>
 
     <!-- My Works -->
-    <div class="px-16 flex items-center flex-col">
-        <h2 id="worksTitle" class="text-3xl mb-16 md:text-5xl font-bold mt-4 text-center md:text-left md:mt-16 capitalize"></h2>
+    <div class="px-16 flex flex-col">
+        <h2 class="text-3xl mb-8 md:text-5xl font-bold mt-4  md:text-left md:mt-16 capitalize"></h2>
         <div class="workContainer">
-            <figure class="card">
-                <img alt="Social App with firebase" src="images/social-ape.jpg">
-                <figcaption>
-                    <p class="px-4 text-center">Social Ape UI<br><span class="text-xs">HTML, CSS, Material UI, React, Redux, Firestore</span></p>
-                    <a target="_blank" href="https://socialape-f45ad.firebaseapp.com/">
-                        <button>
-                            <span>View Demo</span>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
-                            </svg>
-                        </button>
-                    </a>
-                </figcaption>
-            </figure>
-            <figure class="card">
-                <img alt="Slick Card Animation with GSAP" src="images/slick-card-animation.jpg">
-                <figcaption>
-                    <p class="px-4 text-center">Slick Card Animation<br><span class="text-xs">HTML, CSS, JS, GSAP</span></p>
-                    <a target="_blank" href="https://digitalcache.github.io/gsap-slick-animation-card-elements/">
-                        <button>
-                            <span>View Demo</span>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
-                            </svg>
-                        </button>
-                    </a>
-                </figcaption>
-            </figure>
-            <figure class="card">
-                <img alt="Submit button Animation using AnimeJS" src="images/submit-button-animation.jpg">
-                <figcaption>
-                    <p class="px-4 text-center">Submit Button Animation<br><span class="text-xs">HTML, CSS, JS, AnimeJS</span></p>
-                    <a target="_blank" href="https://digitalcache.github.io/submit-button-animejs/">
-                        <button>
-                            <span>View Demo</span>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
-                            </svg>
-                        </button>
-                    </a>
-                </figcaption>
-            </figure>
-            <figure class="card">
-                <img alt="Type Writer Animation" src="images/minimalist-typewriter.jpg">
-                <figcaption>
-                    <p class="px-4 text-center">Type Writer Animation<br><span class="text-xs">HTML, CSS, JS</span></p>
-                    <a target="_blank" href="https://digitalcache.github.io/typewriter-effect-minimalist-email-client-ui/">
-                        <button>
-                            <span>View Demo</span>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
-                            </svg>
-                        </button>
-                    </a>
-                </figcaption>
-            </figure>
-            <figure class="card">
-                <img alt="Flip Card Animation using AnimeJS" src="images/flip-card-anim.jpg">
-                <figcaption>
-                    <p class="px-4 text-center">Flip Card Animation<br><span class="text-xs">HTML, CSS, JS, AnimeJS</span></p>
-                    <a target="_blank" href="https://digitalcache.github.io/glassmorphism-card-flip-animejs/">
-                        <button>
-                            <span>View Demo</span>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
-                            </svg>
-                        </button>
-                    </a>
-                </figcaption>
-            </figure>
-            <figure class="card">
-                <img alt="Landing Page Animation" src="images/landing-page-animation.jpg">
-                <figcaption>
-                    <p class="px-4 text-center">Landing Page Animations<br><span class="text-xs">HTML, CSS, JS, AnimeJS</span></p>
-                    <a target="_blank" href="https://digitalcache.github.io/landing-page-intro-animations/">
-                        <button>
-                            <span>View Demo</span>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
-                            </svg>
-                        </button>
-                    </a>
-                </figcaption>
-            </figure>
-            <figure class="card">
-                <img alt="Floating Social Button using Glassmorphism" src="images/floating-social-button.jpg">
-                <figcaption>
-                    <p class="px-4 text-center">Floating Social Button with Glassmorphism<br><span class="text-xs">HTML, CSS, JS, AnimeJS</span></p>
-                    <a target="_blank" href="https://digitalcache.github.io/floating-social-buttons-glassmorphism/">
-                        <button>
-                            <span>View Demo</span>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
-                            </svg>
-                        </button>
-                    </a>
-                </figcaption>
-            </figure>
-            <figure class="card">
-                <img alt="Glassmorphism moving circles login form" src="images/glassmorphism-moving-spheres.jpg">
-                <figcaption>
-                    <p class="px-4 text-center">Glassmorphism Moving Circles<br><span class="text-xs">HTML, CSS</span></p>
-                    <a target="_blank" href="https://digitalcache.github.io/glassmorphism-moving-circles-login-form/">
-                        <button>
-                            <span>View Demo</span>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
-                            </svg>
-                        </button>
-                    </a>
-                </figcaption>
-            </figure>
-            <figure class="card">
-                <img alt="Moving Dots Animation using GSAP" src="images/moving-dots-animation.jpg">
-                <figcaption>
-                    <p class="px-4 text-center">Moving Dots GSAP<br><span class="text-xs">HTML, CSS, JS, GSAP</span></p>
-                    <a target="_blank" href="https://digitalcache.github.io/color-dots-loader-animejs/">
-                        <button>
-                            <span>View Demo</span>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
-                            </svg>
-                        </button>
-                    </a>
-                </figcaption>
-            </figure>
-            <figure class="card">
-                <img alt="Visualizer Animation using animejs" src="images/visualizer-animation.jpg">
-                <figcaption>
-                    <p class="px-4 text-center">Visualizer Animation<br><span class="text-xs">HTML, CSS, JS, AnimeJS</span></p>
-                    <a target="_blank" href="https://digitalcache.github.io/awesome-background-animation-animejs/">
-                        <button>
-                            <span>View Demo</span>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
-                            </svg>
-                        </button>
-                    </a>
-                </figcaption>
-            </figure>
-            <figure class="card">
-                <img alt="Animated Colored Boxes" src="images/animated-color-boxes.jpg">
-                <figcaption>
-                    <p class="px-4 text-center">Animated Colored Boxes<br><span class="text-xs">HTML, CSS, JS, AnimeJS</span></p>
-                    <a target="_blank" href="https://digitalcache.github.io/animated-color-boxes/">
-                        <button>
-                            <span>View Demo</span>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
-                            </svg>
-                        </button>
-                    </a>
-                </figcaption>
-            </figure>
-            <figure class="card">
-                <img alt="Animated Planets" src="images/planets-animation.jpg">
-                <figcaption>
-                    <p class="px-4 text-center">Animated Planets<br><span class="text-xs">HTML, CSS, JS, SwiperJS</span></p>
-                    <a target="_blank" href="https://digitalcache.github.io/animated-planet-slides/">
-                        <button>
-                            <span>View Demo</span>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
-                            </svg>
-                        </button>
-                    </a>
-                </figcaption>
-            </figure>
-            <figure class="card">
-                <img alt="Responsive recipe App" src="images/resp-recipe-app.jpg">
-                <figcaption>
-                    <p class="px-4 text-center">Responsive Recipe App from API<br><span class="text-xs">HTML, CSS, JS, REST, JSON</span></p>
-                    <a target="_blank" href="https://digitalcache.github.io/recipe-app-responsive/">
-                        <button>
-                            <span>View Demo</span>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
-                            </svg>
-                        </button>
-                    </a>
-                </figcaption>
-            </figure>
-            <figure class="card">
-                <img alt="GSAP SVG Animation" src="images/svg-anim.jpg">
-                <figcaption>
-                    <p class="px-4 text-center">GSAP SVG Animation<br><span class="text-xs">HTML, CSS, JS, GSAP</span></p>
-                    <a target="_blank" href="https://digitalcache.github.io/gsap-svg-animation/">
-                        <button>
-                            <span>View Demo</span>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
-                            </svg>
-                        </button>
-                    </a>
-                </figcaption>
-            </figure>
-            <figure class="card">
-                <img alt="3D Shoe Gallery" src="images/shoe-gallery.jpg">
-                <figcaption>
-                    <p class="px-4 text-center">3D Shoe Gallery<br><span class="text-xs">HTML, CSS, JS</span></p>
-                    <a target="_blank" href="https://digitalcache.github.io/3DProductViewer/">
-                        <button>
-                            <span>View Demo</span>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
-                            </svg>
-                        </button>
-                    </a>
-                </figcaption>
-            </figure>
-            <figure class="card">
-                <img alt="New Year Countdown" src="images/new-year-count.jpg">
-                <figcaption>
-                    <p class="px-4 text-center">New Year Countdown<br><span class="text-xs">HTML, CSS, JS</span></p>
-                    <a target="_blank" href="https://digitalcache.github.io/countdown-newyear/">
-                        <button>
-                            <span>View Demo</span>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
-                            </svg>
-                        </button>
-                    </a>
-                </figcaption>
-            </figure>
-            <figure class="card">
-                <img alt="Landing Page Animation with GSAP" src="images/gsap-landing-anim.jpg">
-                <figcaption>
-                    <p class="px-4 text-center">Landing Page Animation with GSAP<br><span class="text-xs">HTML, CSS, JS, GSAP</span></p>
-                    <a target="_blank" href="https://digitalcache.github.io/gsap-xalato/">
-                        <button>
-                            <span>View Demo</span>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
-                            </svg>
-                        </button>
-                    </a>
-                </figcaption>
-            </figure>
-            <figure class="card">
-                <img alt="Data over REST API" src="images/tv-maze.jpg">
-                <figcaption>
-                    <p class="px-4 text-center">Data over REST API<br><span class="text-xs">HTML, CSS, JS, React, Redux</span></p>
-                    <a target="_blank" href="https://digitalcache.github.io/tv-maze-static/">
-                        <button>
-                            <span>View Demo</span>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
-                            </svg>
-                        </button>
-                    </a>
-                </figcaption>
-            </figure>
-            <figure class="card">
-                <img alt="Animated Landing Page" src="images/animated-eco-landing.jpg">
-                <figcaption>
-                    <p class="px-4 text-center">Animated Landing Page<br><span class="text-xs">HTML, CSS</span></p>
-                    <a target="_blank" href="https://digitalcache.github.io/animated-eco-landing-page/">
-                        <button>
-                            <span>View Demo</span>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
-                            </svg>
-                        </button>
-                    </a>
-                </figcaption>
-            </figure>
-            <figure class="card">
-                <img alt="Custom Select List" src="images/custom-select-list.jpg">
-                <figcaption>
-                    <p class="px-4 text-center">Custom Select List<br><span class="text-xs">HTML, CSS, JS</span></p>
-                    <a target="_blank" href="https://digitalcache.github.io/select-list-js-custom/">
-                        <button>
-                            <span>View Demo</span>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
-                            </svg>
-                        </button>
-                    </a>
-                </figcaption>
-            </figure>
-            <figure class="card">
-                <img alt="React Neumorphism Calculator" src="images/react-neo-calc.jpg">
-                <figcaption>
-                    <p class="px-4 text-center">React Neumorphism Calculator<br><span class="text-xs">HTML, SCSS, React</span></p>
-                    <a target="_blank" href="https://digitalcache.github.io/react-neumorphism-calculator/">
-                        <button>
-                            <span>View Demo</span>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
-                            </svg>
-                        </button>
-                    </a>
-                </figcaption>
-            </figure>
-            <figure class="card">
-                <img alt="Todo List" src="images/todolist-react.jpg">
-                <figcaption>
-                    <p class="px-4 text-center">Todo List<br><span class="text-xs">HTML, SCSS, React, Redux</span></p>
-                    <a target="_blank" href="https://digitalcache.github.io/todo-app-react-static/">
-                        <button>
-                            <span>View Demo</span>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
-                            </svg>
-                        </button>
-                    </a>
-                </figcaption>
-            </figure>
-            <figure class="card">
-                <img alt="Custom Code Pen with React" src="images/codepen-react.jpg">
-                <figcaption>
-                    <p class="px-4 text-center">Custom Code Pen with React<br><span class="text-xs">HTML, SCSS, React</span></p>
-                    <a target="_blank" href="https://digitalcache.github.io/codepen-react-static/">
-                        <button>
-                            <span>View Demo</span>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
-                            </svg>
-                        </button>
-                    </a>
-                </figcaption>
-            </figure>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <figure class="card swiper-slide">
+                        <img alt="Social App with firebase" src="images/social-ape.jpg">
+                        <figcaption>
+                            <p class="px-4 text-center text-xs">Social Ape UI<br><span class="card-code-font-size">HTML, CSS, Material UI, React, Redux, Firestore</span></p>
+                            <a target="_blank" href="https://socialape-f45ad.firebaseapp.com/">
+                                <button>
+                                    <span>View Demo</span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="card swiper-slide">
+                        <img alt="Slick Card Animation with GSAP" src="images/slick-card-animation.jpg">
+                        <figcaption>
+                            <p class="px-4 text-center text-xs">Slick Card Animation<br><span class="card-code-font-size">HTML, CSS, JS, GSAP</span></p>
+                            <a target="_blank" href="https://digitalcache.github.io/gsap-slick-animation-card-elements/">
+                                <button>
+                                    <span>View Demo</span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="card swiper-slide">
+                        <img alt="Submit button Animation using AnimeJS" src="images/submit-button-animation.jpg">
+                        <figcaption>
+                            <p class="px-4 text-center text-xs">Submit Button Animation<br><span class="card-code-font-size">HTML, CSS, JS, AnimeJS</span></p>
+                            <a target="_blank" href="https://digitalcache.github.io/submit-button-animejs/">
+                                <button>
+                                    <span>View Demo</span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="card swiper-slide">
+                        <img alt="Type Writer Animation" src="images/minimalist-typewriter.jpg">
+                        <figcaption>
+                            <p class="px-4 text-center text-xs">Type Writer Animation<br><span class="card-code-font-size">HTML, CSS, JS</span></p>
+                            <a target="_blank" href="https://digitalcache.github.io/typewriter-effect-minimalist-email-client-ui/">
+                                <button>
+                                    <span>View Demo</span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="card swiper-slide">
+                        <img alt="Flip Card Animation using AnimeJS" src="images/flip-card-anim.jpg">
+                        <figcaption>
+                            <p class="px-4 text-center text-xs">Flip Card Animation<br><span class="card-code-font-size">HTML, CSS, JS, AnimeJS</span></p>
+                            <a target="_blank" href="https://digitalcache.github.io/glassmorphism-card-flip-animejs/">
+                                <button>
+                                    <span>View Demo</span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="card swiper-slide">
+                        <img alt="Landing Page Animation" src="images/landing-page-animation.jpg">
+                        <figcaption>
+                            <p class="px-4 text-center text-xs">Landing Page Animations<br><span class="card-code-font-size">HTML, CSS, JS, AnimeJS</span></p>
+                            <a target="_blank" href="https://digitalcache.github.io/landing-page-intro-animations/">
+                                <button>
+                                    <span>View Demo</span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="card swiper-slide">
+                        <img alt="Floating Social Button using Glassmorphism" src="images/floating-social-button.jpg">
+                        <figcaption>
+                            <p class="px-4 text-center text-xs">Floating Social Button with Glassmorphism<br><span class="card-code-font-size">HTML, CSS, JS, AnimeJS</span></p>
+                            <a target="_blank" href="https://digitalcache.github.io/floating-social-buttons-glassmorphism/">
+                                <button>
+                                    <span>View Demo</span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="card swiper-slide">
+                        <img alt="Glassmorphism moving circles login form" src="images/glassmorphism-moving-spheres.jpg">
+                        <figcaption>
+                            <p class="px-4 text-center text-xs">Glassmorphism Moving Circles<br><span class="card-code-font-size">HTML, CSS</span></p>
+                            <a target="_blank" href="https://digitalcache.github.io/glassmorphism-moving-circles-login-form/">
+                                <button>
+                                    <span>View Demo</span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="card swiper-slide">
+                        <img alt="Moving Dots Animation using GSAP" src="images/moving-dots-animation.jpg">
+                        <figcaption>
+                            <p class="px-4 text-center text-xs">Moving Dots GSAP<br><span class="card-code-font-size">HTML, CSS, JS, GSAP</span></p>
+                            <a target="_blank" href="https://digitalcache.github.io/color-dots-loader-animejs/">
+                                <button>
+                                    <span>View Demo</span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="card swiper-slide">
+                        <img alt="Visualizer Animation using animejs" src="images/visualizer-animation.jpg">
+                        <figcaption>
+                            <p class="px-4 text-center text-xs">Visualizer Animation<br><span class="card-code-font-size">HTML, CSS, JS, AnimeJS</span></p>
+                            <a target="_blank" href="https://digitalcache.github.io/awesome-background-animation-animejs/">
+                                <button>
+                                    <span>View Demo</span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="card swiper-slide">
+                        <img alt="Animated Colored Boxes" src="images/animated-color-boxes.jpg">
+                        <figcaption>
+                            <p class="px-4 text-center text-xs">Animated Colored Boxes<br><span class="card-code-font-size">HTML, CSS, JS, AnimeJS</span></p>
+                            <a target="_blank" href="https://digitalcache.github.io/animated-color-boxes/">
+                                <button>
+                                    <span>View Demo</span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="card swiper-slide">
+                        <img alt="Animated Planets" src="images/planets-animation.jpg">
+                        <figcaption>
+                            <p class="px-4 text-center text-xs">Animated Planets<br><span class="card-code-font-size">HTML, CSS, JS, SwiperJS</span></p>
+                            <a target="_blank" href="https://digitalcache.github.io/animated-planet-slides/">
+                                <button>
+                                    <span>View Demo</span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="card swiper-slide">
+                        <img alt="Responsive recipe App" src="images/resp-recipe-app.jpg">
+                        <figcaption>
+                            <p class="px-4 text-center text-xs">Responsive Recipe App from API<br><span class="card-code-font-size">HTML, CSS, JS, REST, JSON</span></p>
+                            <a target="_blank" href="https://digitalcache.github.io/recipe-app-responsive/">
+                                <button>
+                                    <span>View Demo</span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="card swiper-slide">
+                        <img alt="GSAP SVG Animation" src="images/svg-anim.jpg">
+                        <figcaption>
+                            <p class="px-4 text-center text-xs">GSAP SVG Animation<br><span class="card-code-font-size">HTML, CSS, JS, GSAP</span></p>
+                            <a target="_blank" href="https://digitalcache.github.io/gsap-svg-animation/">
+                                <button>
+                                    <span>View Demo</span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="card swiper-slide">
+                        <img alt="3D Shoe Gallery" src="images/shoe-gallery.jpg">
+                        <figcaption>
+                            <p class="px-4 text-center text-xs">3D Shoe Gallery<br><span class="card-code-font-size">HTML, CSS, JS</span></p>
+                            <a target="_blank" href="https://digitalcache.github.io/3DProductViewer/">
+                                <button>
+                                    <span>View Demo</span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="card swiper-slide">
+                        <img alt="New Year Countdown" src="images/new-year-count.jpg">
+                        <figcaption>
+                            <p class="px-4 text-center text-xs">New Year Countdown<br><span class="card-code-font-size">HTML, CSS, JS</span></p>
+                            <a target="_blank" href="https://digitalcache.github.io/countdown-newyear/">
+                                <button>
+                                    <span>View Demo</span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="card swiper-slide">
+                        <img alt="Landing Page Animation with GSAP" src="images/gsap-landing-anim.jpg">
+                        <figcaption>
+                            <p class="px-4 text-center text-xs">Landing Page Animation with GSAP<br><span class="card-code-font-size">HTML, CSS, JS, GSAP</span></p>
+                            <a target="_blank" href="https://digitalcache.github.io/gsap-xalato/">
+                                <button>
+                                    <span>View Demo</span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="card swiper-slide">
+                        <img alt="Data over REST API" src="images/tv-maze.jpg">
+                        <figcaption>
+                            <p class="px-4 text-center text-xs">Data over REST API<br><span class="card-code-font-size">HTML, CSS, JS, React, Redux</span></p>
+                            <a target="_blank" href="https://digitalcache.github.io/tv-maze-static/">
+                                <button>
+                                    <span>View Demo</span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="card swiper-slide">
+                        <img alt="Animated Landing Page" src="images/animated-eco-landing.jpg">
+                        <figcaption>
+                            <p class="px-4 text-center text-xs">Animated Landing Page<br><span class="card-code-font-size">HTML, CSS</span></p>
+                            <a target="_blank" href="https://digitalcache.github.io/animated-eco-landing-page/">
+                                <button>
+                                    <span>View Demo</span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="card swiper-slide">
+                        <img alt="Custom Select List" src="images/custom-select-list.jpg">
+                        <figcaption>
+                            <p class="px-4 text-center text-xs">Custom Select List<br><span class="card-code-font-size">HTML, CSS, JS</span></p>
+                            <a target="_blank" href="https://digitalcache.github.io/select-list-js-custom/">
+                                <button>
+                                    <span>View Demo</span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="card swiper-slide">
+                        <img alt="React Neumorphism Calculator" src="images/react-neo-calc.jpg">
+                        <figcaption>
+                            <p class="px-4 text-center text-xs">React Neumorphism Calculator<br><span class="card-code-font-size">HTML, SCSS, React</span></p>
+                            <a target="_blank" href="https://digitalcache.github.io/react-neumorphism-calculator/">
+                                <button>
+                                    <span>View Demo</span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="card swiper-slide">
+                        <img alt="Todo List" src="images/todolist-react.jpg">
+                        <figcaption>
+                            <p class="px-4 text-center text-xs">Todo List<br><span class="card-code-font-size">HTML, SCSS, React, Redux</span></p>
+                            <a target="_blank" href="https://digitalcache.github.io/todo-app-react-static/">
+                                <button>
+                                    <span>View Demo</span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="card swiper-slide">
+                        <img alt="Custom Code Pen with React" src="images/codepen-react.jpg">
+                        <figcaption>
+                            <p class="px-4 text-center text-xs">Custom Code Pen with React<br><span class="card-code-font-size">HTML, SCSS, React</span></p>
+                            <a target="_blank" href="https://digitalcache.github.io/codepen-react-static/">
+                                <button>
+                                    <span>View Demo</span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1313 7.5L10.3688 9.2625L16.0938 15L10.3688 20.7375L12.1313 22.5L19.6313 15L12.1313 7.5Z" fill="white" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            
         </div>
     </div>
+   
+
+    <section  class="px-16">
+        <div class="blueRuler"></div>
+        <h2 class=" text-3xl mb-8 md:text-5xl font-bold mt-4  md:text-left md:mt-16 capitalize">Technologies</h2>
+        <p class="md:mt-8 mt-64 pt-12 md:pt-0 text-xs leading-5 md:leading-6 md:text-sm font-light  text-center md:text-left">I've worked with a range a technologies in the web
+            development world. <br>From Back-end To Design</p>
+        <ul class="listStyleGrid">
+            <li class="listStyleItem">
+                <picture><svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 34 32"
+                        height="3rem" width="3rem" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.314 15.987c0 1.321-1.071 2.392-2.392 2.392s-2.392-1.071-2.392-2.392c0-1.321 1.071-2.392 2.392-2.392s2.392 1.071 2.392 2.392z">
+                        </path>
+                        <path
+                            d="M16.922 24.783c1.878 1.826 3.729 2.906 5.221 2.906 0.489 0 0.952-0.103 1.337-0.334 1.337-0.772 1.826-2.701 1.363-5.453-0.077-0.489-0.18-0.977-0.309-1.492 0.514-0.154 0.977-0.309 1.44-0.463 2.598-1.003 4.038-2.392 4.038-3.909 0-1.543-1.44-2.932-4.038-3.909-0.463-0.18-0.926-0.334-1.44-0.463 0.129-0.514 0.232-1.003 0.309-1.492 0.437-2.803-0.051-4.758-1.389-5.53-0.386-0.231-0.849-0.334-1.337-0.334-1.466 0-3.344 1.080-5.221 2.906-1.852-1.826-3.704-2.906-5.195-2.906-0.489 0-0.952 0.103-1.337 0.334-1.337 0.772-1.826 2.701-1.363 5.453 0.077 0.489 0.18 0.977 0.309 1.492-0.514 0.154-0.977 0.309-1.44 0.463-2.598 1.003-4.038 2.392-4.038 3.909 0 1.543 1.44 2.932 4.038 3.909 0.463 0.18 0.926 0.334 1.44 0.463-0.129 0.514-0.232 1.003-0.309 1.492-0.437 2.752 0.051 4.707 1.363 5.453 0.386 0.232 0.849 0.334 1.337 0.334 1.492 0.051 3.344-1.029 5.221-2.829v0zM15.481 21.311c0.463 0.026 0.952 0.026 1.44 0.026s0.977 0 1.44-0.026c-0.463 0.617-0.952 1.183-1.44 1.723-0.489-0.54-0.977-1.106-1.44-1.723zM12.292 18.662c0.257 0.437 0.489 0.849 0.772 1.26-0.797-0.103-1.543-0.232-2.263-0.386 0.232-0.694 0.489-1.415 0.797-2.135 0.206 0.411 0.437 0.849 0.694 1.26zM10.8 12.463c0.72-0.154 1.466-0.283 2.263-0.386-0.257 0.412-0.514 0.823-0.772 1.26s-0.489 0.849-0.694 1.286c-0.334-0.746-0.592-1.466-0.797-2.161zM12.215 15.987c0.334-0.694 0.694-1.389 1.106-2.083 0.386-0.669 0.823-1.337 1.26-2.006 0.772-0.051 1.543-0.077 2.341-0.077 0.823 0 1.595 0.026 2.341 0.077 0.463 0.669 0.874 1.337 1.26 2.006 0.412 0.694 0.772 1.389 1.106 2.083-0.334 0.694-0.694 1.389-1.106 2.083-0.386 0.669-0.823 1.337-1.26 2.006-0.772 0.051-1.543 0.077-2.341 0.077-0.823 0-1.595-0.026-2.341-0.077-0.463-0.669-0.874-1.337-1.26-2.006-0.412-0.695-0.772-1.389-1.106-2.083v0zM22.272 14.598l-0.694-1.286c-0.257-0.437-0.489-0.849-0.772-1.26 0.797 0.103 1.543 0.232 2.263 0.386-0.231 0.72-0.489 1.44-0.797 2.161v0zM22.272 17.376c0.309 0.72 0.566 1.44 0.797 2.135-0.72 0.154-1.466 0.283-2.263 0.386 0.257-0.412 0.514-0.823 0.772-1.26 0.232-0.386 0.463-0.823 0.694-1.26v0zM22.863 26.301c-0.206 0.129-0.463 0.18-0.746 0.18-1.26 0-2.829-1.029-4.372-2.572 0.746-0.797 1.466-1.698 2.186-2.701 1.209-0.103 2.366-0.283 3.447-0.54 0.129 0.463 0.206 0.926 0.283 1.389 0.36 2.186 0.077 3.755-0.797 4.244zM24.201 12.746c2.881 0.823 4.604 2.083 4.604 3.241 0 1.003-1.183 2.006-3.266 2.804-0.412 0.154-0.874 0.309-1.337 0.437-0.334-1.055-0.746-2.135-1.26-3.241 0.514-1.106 0.952-2.186 1.26-3.241v0zM22.143 5.493c0.283 0 0.514 0.051 0.746 0.18 0.849 0.489 1.157 2.032 0.797 4.244-0.077 0.437-0.18 0.9-0.283 1.389-1.080-0.232-2.238-0.412-3.447-0.54-0.694-1.003-1.44-1.903-2.186-2.701 1.543-1.518 3.112-2.572 4.372-2.572zM18.362 10.663c-0.463-0.026-0.952-0.026-1.44-0.026s-0.977 0-1.44 0.026c0.463-0.617 0.952-1.183 1.44-1.723 0.489 0.54 0.977 1.132 1.44 1.723v0zM10.98 5.673c0.206-0.129 0.463-0.18 0.746-0.18 1.26 0 2.829 1.029 4.372 2.572-0.746 0.797-1.466 1.697-2.186 2.701-1.209 0.103-2.366 0.283-3.447 0.54-0.129-0.463-0.206-0.926-0.283-1.389-0.36-2.186-0.077-3.729 0.797-4.244v0zM9.643 19.228c-2.881-0.823-4.604-2.083-4.604-3.241 0-1.003 1.183-2.006 3.266-2.803 0.412-0.154 0.874-0.309 1.337-0.437 0.334 1.055 0.746 2.135 1.26 3.241-0.514 1.106-0.952 2.212-1.26 3.241zM10.183 22.057c0.077-0.437 0.18-0.9 0.283-1.389 1.080 0.232 2.238 0.412 3.447 0.54 0.694 1.003 1.44 1.903 2.186 2.701-1.543 1.517-3.112 2.572-4.372 2.572-0.283 0-0.514-0.051-0.746-0.18-0.875-0.489-1.157-2.058-0.797-4.244z">
+                        </path>
+                    </svg>
+                </picture>
+                <div>
+                    <h4 >Front-End</h4>
+                    <p>Experiece with <br>React.js</p>
+                </div>
+            </li>
+            <li class="listStyleItem">
+                <picture><svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 32 32"
+                        height="3rem" width="3rem" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.249 6.953c-2.833 0.351-4.585 1.184-4.794 2.293-0.038 0.18-0.038 1.184-0.019 2.236 0.038 1.573 0.066 1.971 0.208 2.226 0.152 0.294 0.152 0.341 0 0.739-0.142 0.369-0.152 0.654-0.104 2.188 0.038 0.966 0.114 1.904 0.18 2.075 0.085 0.237 0.085 0.369 0 0.559-0.142 0.303-0.152 2.975-0.019 3.78 0.057 0.379 0.18 0.673 0.36 0.9 0.843 1.052 3.079 1.677 6.366 1.781 4.083 0.133 7.2-0.635 7.939-1.952 0.199-0.341 0.208-0.493 0.208-2.226 0-1.468-0.028-1.933-0.151-2.226-0.123-0.313-0.123-0.417-0.028-0.597 0.085-0.161 0.114-0.71 0.095-2.018-0.019-1.876-0.047-2.151-0.256-2.454-0.104-0.152-0.095-0.227 0.019-0.464 0.123-0.227 0.152-0.644 0.142-2.302-0.009-1.175-0.057-2.15-0.123-2.33-0.256-0.786-1.393-1.506-2.937-1.876-1.895-0.445-4.964-0.587-7.086-0.332zM13.685 7.844c-0.028 0.047 0.502 0.057 1.213 0.028 1.052-0.038 3.827 0.123 3.733 0.218-0.019 0.019-0.445 0.076-0.957 0.133-0.521 0.057-1.023 0.152-1.137 0.208-0.189 0.104-0.189 0.114-0.028 0.237 0.161 0.114 0.151 0.123-0.095 0.18-0.777 0.161-1.279 0.36-1.459 0.587-0.455 0.578-0.057 1.156 0.919 1.364 0.739 0.152 3.657 0.057 4.462-0.142 0.891-0.227 1.345-0.483 1.345-0.767 0-0.388-0.569-0.673-1.942-0.957-0.73-0.142-0.265-0.171 0.644-0.028 0.9 0.142 1.63 0.417 1.866 0.72 0.171 0.227 0.189 0.379 0.189 2.027 0 2.037 0.019 1.989-0.909 2.416-1.345 0.635-3.534 0.872-7.333 0.805-0.72-0.019-0.777-0.028-0.578-0.142s0.133-0.133-0.663-0.18c-1.108-0.066-2.075-0.341-2.529-0.701-0.55-0.436-0.9-1.222-0.947-2.15-0.047-0.881 0.123-1.895 0.303-1.829 0.066 0.028 0.208-0.133 0.341-0.369 0.379-0.72 1.203-1.213 2.558-1.554 0.805-0.199 1.080-0.227 1.004-0.104zM10.123 14.949c0 0.388 0.189 0.549 0.928 0.767 2.672 0.805 8.697 0.701 10.421-0.18 0.351-0.18 0.398-0.237 0.398-0.53 0-0.36 0.095-0.417 0.322-0.18 0.18 0.18 0.171 0.019 0.151 1.98l-0.009 1.611-0.275 0.256c-0.587 0.54-2.624 0.966-5.116 1.080-3.088 0.142-6.622-0.464-7.162-1.232-0.104-0.152-0.133-0.559-0.133-1.847 0-1.402 0.019-1.677 0.161-1.828 0.218-0.246 0.313-0.208 0.313 0.104zM10.407 20.368c0.815 0.597 4.86 0.995 7.598 0.758 1.506-0.133 2.804-0.379 3.429-0.654 0.417-0.189 0.436-0.218 0.436-0.578 0-0.265 0.038-0.388 0.133-0.388 0.322 0 0.369 0.256 0.35 1.999-0.009 0.947-0.047 1.772-0.066 1.838-0.076 0.189-0.881 0.587-1.554 0.758-1.146 0.303-2.217 0.436-3.932 0.493-3.164 0.104-6.139-0.379-6.944-1.127-0.199-0.199-0.208-0.265-0.208-1.914 0-1.639 0.009-1.715 0.218-1.933l0.208-0.227 0.047 0.407c0.038 0.284 0.114 0.445 0.284 0.568z">
+                        </path>
+                    </svg>
+                </picture>
+                <div>
+                    <h4 >Back-End</h4>
+                    <p>Experience with <br>Node and Databases
+                    </p>
+                </div>
+            </li>
+            <li class="listStyleItem">
+                <picture><svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 32 32"
+                        height="3rem" width="3rem" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.334 14.023c0 0 0-2.972 2.972-2.972h8.917c0 0 0 2.972-2.972 2.972h-8.917zM15.334 17.821c0 0 0-2.972 2.972-2.972h4.459c0 0 0 2.972-2.972 2.972h-4.459zM15.334 21.619c0 0 0-2.972 2.972-2.972h1.486c0 0 0 2.972-2.972 2.972h-1.486zM14.336 19.3v2.371h-9.559l6.158-8.399h-5.286v-2.371h9.972l-6.129 8.4z">
+                        </path>
+                    </svg>
+                </picture>
+                <div>
+                    <h4>UI/UX</h4>
+                    <p>Experience with <br>tools like Figma
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <div class="blueRuler"></div>
+    </section>
+
+    <section class="px-16">
+        <h2 class="text-3xl mb-8 md:text-5xl font-bold mt-4  md:text-left md:mt-16 capitalize">About Me</h2>
+        <p class="md:mt-8 mt-64 pt-12 md:pt-0 text-xs leading-5 md:leading-6 md:text-sm font-light  text-center md:text-left mb-16">
+            I am a Creative UI Developer dedicated to developing and optimizing websites to be Interactive, User-Friendly, and Featured-Rich. 
+            <br>I believe in writing well-documented, clear, readable, and maintainable code.
+            I am also quick to learn and adapt quickly to emerging new technologies.
+        </p>
+        <ul class="timeLineUL">
+            <div>
+                <div>
+                    <h4 class="heading">2017
+                        <svg width="208" height="6"
+                            viewBox="0 0 208 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.5 5.5C3.88071 5.5 5 4.38071 5 3V3.5L208 3.50002V2.50002L5 2.5V3C5 1.61929 3.88071 0.5 2.5 0.5C1.11929 0.5 0 1.61929 0 3C0 4.38071 1.11929 5.5 2.5 5.5Z"
+                                fill="url(#paint0_linear)" fill-opacity="0.33"></path>
+                            <defs>
+                                <linearGradient id="paint0_linear" x1="-4.30412e-10" y1="0.5" x2="208" y2="0.500295"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white"></stop>
+                                    <stop offset="0.79478" stop-color="white" stop-opacity="0"></stop>
+                                </linearGradient>
+                            </defs>
+                        </svg></h4>
+                    <p class="text">Started my journey</p>
+                </div>
+            </div>
+            <div>
+                <div class="background">
+                    <h4 class="heading">2018<svg width="208" height="6"
+                            viewBox="0 0 208 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.5 5.5C3.88071 5.5 5 4.38071 5 3V3.5L208 3.50002V2.50002L5 2.5V3C5 1.61929 3.88071 0.5 2.5 0.5C1.11929 0.5 0 1.61929 0 3C0 4.38071 1.11929 5.5 2.5 5.5Z"
+                                fill="url(#paint0_linear)" fill-opacity="0.33"></path>
+                            <defs>
+                                <linearGradient id="paint0_linear" x1="-4.30412e-10" y1="0.5" x2="208" y2="0.500295"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white"></stop>
+                                    <stop offset="0.79478" stop-color="white" stop-opacity="0"></stop>
+                                </linearGradient>
+                            </defs>
+                        </svg></h4>
+                    <p class="text">Worked as a freelance developer</p>
+                </div>
+            </div>
+            <div>
+                <div class="background">
+                    <h4 class="heading">2019<svg width="208" height="6"
+                            viewBox="0 0 208 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.5 5.5C3.88071 5.5 5 4.38071 5 3V3.5L208 3.50002V2.50002L5 2.5V3C5 1.61929 3.88071 0.5 2.5 0.5C1.11929 0.5 0 1.61929 0 3C0 4.38071 1.11929 5.5 2.5 5.5Z"
+                                fill="url(#paint0_linear)" fill-opacity="0.33"></path>
+                            <defs>
+                                <linearGradient id="paint0_linear" x1="-4.30412e-10" y1="0.5" x2="208" y2="0.500295"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white"></stop>
+                                    <stop offset="0.79478" stop-color="white" stop-opacity="0"></stop>
+                                </linearGradient>
+                            </defs>
+                        </svg></h4>
+                    <p class="text">Founded JavaScript Mastery</p>
+                </div>
+            </div>
+            <div>
+                <div class="background">
+                    <h4 class="heading">2020<svg width="208" height="6"
+                            viewBox="0 0 208 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.5 5.5C3.88071 5.5 5 4.38071 5 3V3.5L208 3.50002V2.50002L5 2.5V3C5 1.61929 3.88071 0.5 2.5 0.5C1.11929 0.5 0 1.61929 0 3C0 4.38071 1.11929 5.5 2.5 5.5Z"
+                                fill="url(#paint0_linear)" fill-opacity="0.33"></path>
+                            <defs>
+                                <linearGradient id="paint0_linear" x1="-4.30412e-10" y1="0.5" x2="208" y2="0.500295"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white"></stop>
+                                    <stop offset="0.79478" stop-color="white" stop-opacity="0"></stop>
+                                </linearGradient>
+                            </defs>
+                        </svg></h4>
+                    <p class="text">Shared my projects with the world</p>
+                </div>
+            </div>
+            <div>
+                <div class="background">
+                    <h4 class="heading">2021<svg width="208" height="6"
+                            viewBox="0 0 208 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.5 5.5C3.88071 5.5 5 4.38071 5 3V3.5L208 3.50002V2.50002L5 2.5V3C5 1.61929 3.88071 0.5 2.5 0.5C1.11929 0.5 0 1.61929 0 3C0 4.38071 1.11929 5.5 2.5 5.5Z"
+                                fill="url(#paint0_linear)" fill-opacity="0.33"></path>
+                            <defs>
+                                <linearGradient id="paint0_linear" x1="-4.30412e-10" y1="0.5" x2="208" y2="0.500295"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white"></stop>
+                                    <stop offset="0.79478" stop-color="white" stop-opacity="0"></stop>
+                                </linearGradient>
+                            </defs>
+                        </svg></h4>
+                    <p class="text">Started my own platform</p>
+                </div>
+            </div>
+        </ul>
+        <div class="blueRuler"></div>
+    </section>
+
     
+
+    <section class="footer px-16 pb-8">
+        <ul class="section1">
+            <div class="content">
+                <h4 class="title">Call</h4><a href="tel:314-343-3432"
+                    class="value">+91-8220284013</a>
+            </div>
+            <div class="content">
+                <h4 class="title">Email</h4><a href="mailto:charles.doley1@gmail.com"
+                    class="value">charles.doley1@gmail.com</a>
+            </div>
+        </ul>
+        <div class="bottomRow">
+            <div class="flexRow">
+                <p class="content">Innovating one project at a time</p>
+            </div>
+            <div class="iconRow mr-8">
+                <a href="https://github.com/digitalcache" target="_blank"
+                    class="icon">
+                    <svg 
+                        width="24" height="24" viewBox="0 0 512.000000 512.000000"
+                        preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                        fill="white" stroke="none">
+                        <path d="M59 5081 l-39 -39 0 -2482 0 -2482 39 -39 39 -39 853 0 c924 1 882
+                        -2 920 56 17 27 19 49 19 305 l0 276 -237 -1 c-203 -1 -248 2 -303 17 -115 33
+                        -189 75 -271 157 -66 66 -84 92 -143 210 -104 208 -150 266 -299 374 -88 64
+                        -112 100 -83 122 52 38 175 27 283 -26 82 -41 149 -102 229 -213 114 -157 206
+                        -239 326 -289 46 -19 71 -22 188 -23 106 0 147 4 190 19 123 42 117 35 160
+                        171 25 79 58 141 107 202 39 48 40 53 13 53 -48 0 -341 64 -437 95 -511 168
+                        -778 557 -800 1166 -12 312 55 543 220 758 55 73 55 68 22 241 -27 149 -12
+                        328 41 488 30 87 55 96 192 67 135 -28 228 -69 538 -236 l62 -33 138 26 c250
+                        49 289 53 554 53 264 0 304 -4 551 -52 l136 -26 74 36 c41 20 133 68 204 107
+                        149 80 247 116 357 130 79 10 114 4 135 -21 19 -24 62 -181 74 -274 13 -99 7
+                        -213 -18 -319 -8 -38 -13 -84 -10 -102 3 -19 40 -91 82 -161 90 -148 109 -189
+                        140 -303 39 -142 48 -227 43 -397 -6 -176 -24 -273 -83 -442 -158 -453 -427
+                        -661 -1000 -772 -93 -18 -172 -34 -174 -35 -2 -2 15 -27 37 -56 23 -30 55 -83
+                        71 -118 60 -128 63 -160 68 -665 2 -297 8 -470 15 -488 6 -15 24 -39 40 -52
+                        l30 -25 874 0 874 0 0 2521 0 2521 -39 39 -39 39 -2462 0 -2462 0 -39 -39z"/>
+                        </g>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/charlisdoley/"  target="_blank" class="icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0V24H24V0H0ZM8 19H5V8H8V19ZM6.5 6.732C5.534 6.732 4.75 5.942 4.75 4.968C4.75 3.994 5.534 3.204 6.5 3.204C7.466 3.204 8.25 3.994 8.25 4.968C8.25 5.942 7.467 6.732 6.5 6.732ZM20 19H17V13.396C17 10.028 13 10.283 13 13.396V19H10V8H13V9.765C14.397 7.179 20 6.988 20 12.241V19Z"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/digital.cache/"  target="_blank" class="icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                            <path d="M14.667 12C14.667 13.473 13.473 14.667 12 14.667C10.527 14.667 9.333 13.474 9.333 12C9.333 10.527 10.527 9.333 12 9.333C13.473 9.333 14.667 10.527 14.667 12ZM18.513 8.768C18.551 9.611 18.559 9.864 18.559 12C18.559 14.136 18.551 14.389 18.513 15.233C18.413 17.383 17.404 18.414 15.234 18.512C14.39 18.55 14.137 18.559 12 18.559C9.864 18.559 9.61 18.551 8.768 18.513C6.594 18.414 5.587 17.381 5.489 15.234C5.45 14.389 5.441 14.136 5.441 12C5.441 9.864 5.45 9.611 5.488 8.768C5.587 6.616 6.597 5.587 8.767 5.489C9.611 5.45 9.864 5.442 12 5.442C14.136 5.442 14.39 5.45 15.233 5.488C17.401 5.587 18.413 6.616 18.513 8.768ZM16.108 12C16.108 9.731 14.268 7.892 12 7.892C9.731 7.892 7.892 9.731 7.892 12C7.892 14.269 9.732 16.108 12 16.108C14.269 16.108 16.108 14.269 16.108 12ZM17.23 7.73C17.23 7.2 16.8 6.77 16.27 6.77C15.74 6.77 15.31 7.2 15.31 7.73C15.31 8.26 15.74 8.69 16.27 8.69C16.801 8.69 17.23 8.26 17.23 7.73V7.73ZM24 0V24H0V0H24ZM20 12C20 9.828 19.991 9.555 19.952 8.702C19.821 5.8 18.207 4.182 15.299 4.049C14.445 4.009 14.173 4 12 4C9.827 4 9.556 4.009 8.702 4.048C5.796 4.181 4.182 5.793 4.048 8.701C4.009 9.555 4 9.828 4 12C4 14.173 4.009 14.445 4.048 15.298C4.182 18.204 5.794 19.819 8.702 19.952C9.556 19.991 9.827 20 12 20C14.173 20 14.445 19.991 15.299 19.952C18.201 19.819 19.821 18.207 19.952 15.298C19.991 14.445 20 14.173 20 12V12Z" 
+                        />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section> 
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script src="scripts/wavify.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

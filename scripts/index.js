@@ -1,8 +1,25 @@
+
+
 mobile = false;
 if(screen.width <= 768) {
     mobile = true;
 }    
-
+const swiper = new Swiper('.swiper-container', {
+    pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+    direction: 'horizontal',
+    keyboard: {
+        enabled: true,
+    },
+    autoplay: {
+        delay: 5000,
+    },
+    slidesPerView: mobile ? 1 : "auto",
+    slidesPerColumn: 2,
+    spaceBetween: 30,
+});
 var languageMeta = {
     english : {
         language: "English",
@@ -26,7 +43,7 @@ var languageMeta = {
         worksTitle: "Check out my Works" 
     },
     spanish : {
-        language: "Spanish",
+        language: "Español",
         aboutService: 'Acerca de y servicios',
         text1: "Soy Charlis Doley",
         text2: "Disponible para trabajo autónomo",
