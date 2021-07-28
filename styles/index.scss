@@ -448,14 +448,11 @@ body {
     flex-direction: column;
 }
 
-
-
 .timeLineUL:first-of-type {
     margin-left: 0px;
 }
 
 .timeLineUL {
-    max-width: 1040px;
     background: #0F1624;
     padding: 0rem;
     list-style: none;
@@ -477,6 +474,8 @@ body {
 
 .timeLineUL .background {
     background: #0F1624;
+    // background: $blue;
+    height: 100%;
     border-radius: 3px;
     max-width: 196px;
 }
