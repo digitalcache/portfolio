@@ -642,6 +642,7 @@ body {
   background: #0F1624;
   padding: 0rem;
   list-style: none;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -662,6 +663,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    background: none;
   }
   .timeLineUL .text {
     margin-bottom: 20px;
@@ -673,6 +675,12 @@ body {
   height: 100%;
   border-radius: 3px;
   max-width: 196px;
+}
+
+@media screen and (max-width: 768px) {
+  .timeLineUL .background {
+    max-width: 100%;
+  }
 }
 
 .timeLineUL .heading {
@@ -703,6 +711,20 @@ body {
   padding-right: 16px;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
 .footer .section1 {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: -ms-grid;
@@ -731,6 +753,10 @@ body {
   width: 100%;
 }
 
+.footer .section1 .content:first-of-type {
+  margin-bottom: 20px;
+}
+
 .footer .title {
   font-style: normal;
   font-weight: 600;
@@ -738,7 +764,6 @@ body {
   line-height: 24px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.4);
-  margin-bottom: 16px;
 }
 
 .bottomRow {
@@ -790,6 +815,9 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer .icon {
