@@ -13,9 +13,9 @@ const swiper = new Swiper('.swiper-container', {
     keyboard: {
         enabled: true,
     },
-    // autoplay: {
-    //     delay: 5000,
-    // },
+    autoplay: {
+        delay: 5000,
+    },
     slidesPerView: mobile ? 1 : "auto",
     // slidesPerView:  "auto",
 
