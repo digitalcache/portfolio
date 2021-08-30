@@ -1,5 +1,3 @@
-
-
 mobile = false;
 if(screen.width <= 768) {
     mobile = true;
@@ -13,14 +11,11 @@ const swiper = new Swiper('.swiper-container', {
     keyboard: {
         enabled: true,
     },
-    autoplay: {
-        delay: 5000,
+    slidesPerView: mobile ? "auto" : 5,
+    spaceBetween: mobile? 0: 30,
+    grid: {
+        rows: mobile ? 0 : 2,
     },
-    slidesPerView: mobile ? 1 : "auto",
-    // slidesPerView:  "auto",
-
-    slidesPerColumn: mobile ? 1 : 2,
-    spaceBetween: 30,
 });
 var languageMeta = {
     english : {

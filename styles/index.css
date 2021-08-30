@@ -484,8 +484,13 @@ body {
   }
 }
 
+.workContainer {
+  position: relative;
+}
+
 .workContainer .swiper-container {
   width: 100%;
+  overflow-x: hidden;
   padding-top: 80px;
   height: 80vh;
   margin-left: 0;
