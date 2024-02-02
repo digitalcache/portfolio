@@ -23,7 +23,7 @@ var languageMeta = {
         aboutService: 'About & Services',
         text1: "I'm Charlis Doley",
         text2: "Available for freelance work",
-        h1: "I’m a Freelance <br> Web Guru  <br> turning your website  <br> smooth like water",
+        h1: "I’m a Freelance <br> Web Buff  <br> turning your website  <br> smooth like water",
         h2: "I help companies to develop digital products and turn ideas into a functional and <br> delightful experience. I’m focusing on working on interface and digital experience <br> on website and apps.",
         text3: "Check out my <br>SkillSphere",
         text4: `I'm a UI Developer located in Hyderabad, India. I have a serious passion for
@@ -44,7 +44,7 @@ var languageMeta = {
         aboutService: 'Acerca de y servicios',
         text1: "Soy Charlis Doley",
         text2: "Disponible para trabajo autónomo",
-        h1: "Soy un gurú web independiente que hace que su sitio web sea fluido como el agua",
+        h1: "Soy un aficionado web independiente que hace que su sitio web sea fluido como el agua",
         h2: "Ayudo a las empresas a desarrollar productos digitales y convertir ideas en una experiencia funcional y agradable. Me estoy enfocando en trabajar en la interfaz y la experiencia digital en sitios web y aplicaciones.",
         text3: "Echa un vistazo a mi <br>SkillSphere",
         text4: `Soy un desarrollador de UI ubicado en Hyderabad, India. Tengo una seria pasión por
