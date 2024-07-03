@@ -156,6 +156,17 @@ body {
   height: 100px;
 }
 
+.dude_on_the_beach{
+  position: absolute;
+  left: 60px;
+  bottom: 0;
+}
+
+.dude {
+  width: 300px;
+  height: 300px;
+}
+
 .mainContainer .surf .surfVector .board {
   -webkit-box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.18);
           box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.18);
@@ -172,6 +183,13 @@ body {
   }
 }
 
+
+@media screen and (max-width: 1240px) {
+  .dude_on_the_beach{
+    display: none;
+  }
+}
+
 .mainContainer .link:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -182,7 +200,7 @@ body {
 }
 
 .mainContainer .link:hover path {
-  fill: #0063FF;
+  fill: #bae6fd;
 }
 
 .mainContainer .aboutLink .rightArrow {
@@ -194,6 +212,10 @@ body {
           animation-timing-function: linear;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+}
+
+.mainContainer .aboutLink:hover{
+  color: #bae6fd;
 }
 
 .mainContainer .aboutLink:hover .rightArrow {
@@ -325,6 +347,9 @@ body {
   width: 250px;
   outline: none;
 }
+.about-me{
+  max-width: 800px;
+}
 
 .mainContainer .email::after {
   position: absolute;
@@ -343,7 +368,7 @@ body {
   height: 100%;
   content: 'Click to Copy!';
   pointer-events: none;
-  background: rgba(0, 99, 255, 0.8);
+  background: rgba(0, 99, 255, 0.9);
 }
 
 @media screen and (max-width: 768px) {
@@ -484,24 +509,63 @@ body {
   }
 }
 
-.workContainer {
+.workContainer, .collabs-container {
   position: relative;
 }
 
-.workContainer .swiper-container {
-  width: 100%;
-  overflow-x: hidden;
+.workContainer{
   padding-top: 80px;
-  height: 80vh;
+  /* padding-right: 80px; */
+}
+
+.workContainer .swiper-container {
+  /* width: 100%; */
+  overflow-x: hidden;
+  /* height: 700px; */
   margin-left: 0;
   margin-right: 0;
 }
 
+.workContainer .swiper-wrapper {
+  /* width: auto !important; */
+}
+.swiper-button-prev{
+
+}
+.swiper-button-next{
+  right: -20px;
+}
+.collabs-container{
+  max-width: 100vw;
+  width: 100%;
+  overflow: hidden;
+}
+
+.collabs-container:hover .animate-collabs{
+  animation-play-state: paused;
+}
+
+.animate-collabs{
+  animation: marquee 12s linear infinite; 
+}
+
 @media screen and (max-width: 768px) {
-  .workContainer .swiper-container {
+  .workContainer .swiper-container{
     padding-top: 0;
     height: 100%;
   }
+  .animate-collabs{
+    animation: marquee 25s linear infinite; 
+  }
+}
+
+@keyframes marquee { 
+  0% { 
+    transform: translateX(0);
+  } 
+  100% { 
+    transform: translateX(-100%);
+  } 
 }
 
 .workContainer figure {
@@ -679,7 +743,7 @@ body {
   background: #0F1624;
   height: 100%;
   border-radius: 3px;
-  max-width: 196px;
+  max-width: 276px;
 }
 
 @media screen and (max-width: 768px) {
@@ -852,5 +916,13 @@ body {
   color: white;
   border-radius: 50px;
   padding: 8px;
+}
+
+.footer .icon svg {
+  fill: white;
+}
+
+.footer .icon:hover svg {
+  fill: #bae6fd;
 }
 /*# sourceMappingURL=index.css.map */
