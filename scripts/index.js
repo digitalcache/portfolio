@@ -1,64 +1,65 @@
 mobile = false;
-if(screen.width <= 768) {
+if(Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0) <= 768) {
     mobile = true;
 }    
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.works-animate', {
     pagination: {
         el: ".swiper-pagination",
         type: "progressbar",
+    },
+    autoplay: {
+        delay: 2000,
+        pauseOnMouseEnter: true,
       },
+    direction: 'horizontal',
+    slidesPerView: mobile ? "auto" : "auto",
+});
+
+
+const swiper2 = new Swiper('.collabs-animate', {
     direction: 'horizontal',
     keyboard: {
         enabled: true,
     },
-    slidesPerView: mobile ? "auto" : 5,
+    autoplay: true,
+    slidesPerView: "auto",
     spaceBetween: mobile? 0: 30,
-    grid: {
-        rows: mobile ? 0 : 2,
-    },
 });
+
 var languageMeta = {
     english : {
         language: "English",
         aboutService: 'About & Services',
-        text1: "I'm Charlis Doley",
-        text2: "Available for freelance work",
-        h1: "I’m a Freelance <br> Web Buff  <br> turning your website  <br> smooth like water",
-        h2: "I help companies to develop digital products and turn ideas into a functional and <br> delightful experience. I’m focusing on working on interface and digital experience <br> on website and apps.",
-        text3: "Check out my <br>SkillSphere",
-        text4: `I'm a UI Developer located in Hyderabad, India. I have a serious passion for
-        UI effects, animations and creating intuitive, dynamic user experience.
+        text1: "Hola!, I'm Charlis Doley",
+        text2: "Digital Web Expert",
+        h1: "Expert in Crafting <br> Effortless Website Experiences.",
+        h2: "I specialize in creating digital products with appealing designs for websites and mobile apps, focusing on user interfaces and enhancing digital experiences through innovative technology. I work with businesses to boost their digital presence, engagement, and brand image, ensuring usability, accessibility, and engaging content for competitive market success.",
+        text3: "Explore My <br>SkillSphere",
+        text4: `I am a UI Developer based in Hyderabad, India, with a profound passion for UI effects, animations, and crafting intuitive, dynamic user experiences.
         <br><br>
-        Well-organized person, problem solver, independent employee with high 
-        attention to detail. I have been working for more than 3 years professionally 
-        as a Software Developer and have completed around 15 projects.
+        As a well-organized individual, I excel at solving problems, work efficiently independently, and possess a keen eye for detail. With over seven years of professional experience as a Front End Developer, I have successfully completed approximately 20+ projects.
         <br><br>
-        Interested in the entire frontend spectrum and working on ambitious
-        projects with positive people.
+        My interests span the entire Frontend spectrum, and I am eager to collaborate on ambitious projects with positive-minded individuals.
         <br><br>`,
-        text5: "Let’s Keep It Crispy.",
-        worksTitle: "Check out my Works" 
+        text5: "Let’s Make It Happen!",
+        worksTitle: "Explore My Creations" 
     },
     spanish : {
         language: "Español",
         aboutService: 'Acerca de y servicios',
-        text1: "Soy Charlis Doley",
-        text2: "Disponible para trabajo autónomo",
-        h1: "Soy un aficionado web independiente que hace que su sitio web sea fluido como el agua",
-        h2: "Ayudo a las empresas a desarrollar productos digitales y convertir ideas en una experiencia funcional y agradable. Me estoy enfocando en trabajar en la interfaz y la experiencia digital en sitios web y aplicaciones.",
+        text1: "¡Hola!, soy charlis doley",
+        text2: "Experto en Web Digital",
+        h1: "Especialista en la creación <br> de experiencias de sitios <br> web sin esfuerzo.",
+        h2: "Me especializo en la creación de productos digitales con diseños atractivos para sitios web y aplicaciones móviles, enfocándome en interfaces de usuario y mejorando las experiencias digitales a través de tecnología innovadora. Trabajo con empresas para impulsar su presencia digital, compromiso e imagen de marca, garantizando usabilidad, accesibilidad y contenido atractivo para el éxito en el mercado competitivo.",
         text3: "Echa un vistazo a mi <br>SkillSphere",
-        text4: `Soy un desarrollador de UI ubicado en Hyderabad, India. Tengo una seria pasión por
-        Efectos de interfaz de usuario, animaciones y creación de una experiencia de usuario dinámica e intuitiva.
+        text4: `Soy un desarrollador de UI con sede en Hyderabad, India, y tengo una profunda pasión por los efectos de UI, las animaciones y la creación de experiencias de usuario intuitivas y dinámicas.
         <br> <br>
-        Persona bien organizada, solucionadora de problemas, empleado independiente con alto
-        atención a los detalles. Trabajo profesionalmente desde hace más de 3 años
-        como desarrollador de software y he completado alrededor de 15 proyectos.
+        Como persona bien organizada, me destaco en la resolución de problemas, trabajo eficientemente de forma independiente y tengo buen ojo para los detalles. Con más de siete años de experiencia profesional como desarrollador front-end, he completado con éxito aproximadamente más de 20 proyectos.
         <br> <br>
-        Interesado en todo el espectro de frontend y trabajando en ambiciosos
-        proyectos con personas positivas.
+        Mis intereses abarcan todo el espectro Frontend y estoy ansioso por colaborar en proyectos ambiciosos con personas de mentalidad positiva.
         <br> <br>`,
-        text5: "Mantengámoslo crujiente.",
-        worksTitle: "Mira mis trabajos"
+        text5: "¡Hagámoslo realidad!",
+        worksTitle: "Explora mis creaciones"
         
     }
 };
@@ -94,10 +95,12 @@ function copyEmail() {
     }
 }
 var sphereTexts = [
-    'Animation', 'Interaction', 'JavaScript',
-    'CSS3', 'HTML5', 'React',
-    'Redux', 'Figma', 'Photoshop',
-    'Material UI', 'Illustrator', 'NodeJs', 'Next JS', 'AnimeJs', 'GSAP', 'API'
+    'Adobe Illustrator', 'Animation', 'API',
+    'Authentication', 'Code review', 'CSS',
+    'Figma', 'Git', 'HTML5',
+    'Javascript', 'Joint Js', 'Next Js', 
+    'Product strategy', 'React', 'SEO', 'Tailwind',
+    'Web Sockets', 'Product Development', 'UX',
 ];
 sphereOptions = {
     radius: mobile ? 100 : 200,
@@ -117,7 +120,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('text4').innerHTML = languageMeta.english.text4;
     document.getElementById('text5').innerHTML = languageMeta.english.text5;
     document.getElementById('worksTitle').innerHTML = languageMeta.english.worksTitle;
-    
     async function firstSetOfAnimation() { 
         const wavesContainerAnimation = anime({
             targets: '.wavesContainer',
@@ -155,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }).finished;
     
         const sphereScreenContainerAnimation = anime({
-            targets: '.sphereScreenContainer',
+            targets: '.skills',
             easing: 'easeOutExpo',
             duration: 1500,
             delay: 3500,
@@ -184,6 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
             targets: '.email',
             easing: 'easeOutExpo',
             bottom: mobile ? null : [200, -60],
+            // top: mobile ? [auto, auto] : [-200, ],
             duration: 1000,
             delay: 5000,
             opacity: [0,1]
