@@ -31,7 +31,7 @@ var languageMeta = {
         language: "English",
         aboutService: 'About & Services',
         text1: "Hola!, I'm Charlis Doley",
-        text2: "Digital Web Expert",
+        text2: "Web Expert",
         h1: "Expert in Crafting <br> Effortless Website Experiences.",
         h2: "I specialize in creating digital products with appealing designs for websites and mobile apps, focusing on user interfaces and enhancing digital experiences through innovative technology. I work with businesses to boost their digital presence, engagement, and brand image, ensuring usability, accessibility, and engaging content for competitive market success.",
         text3: "Explore My <br>SkillSphere",
@@ -95,10 +95,10 @@ function copyEmail() {
     }
 }
 var sphereTexts = [
-    'Adobe Illustrator', 'Animation', 'API',
-    'Authentication', 'Code review', 'CSS',
-    'Figma', 'Git', 'HTML5',
-    'Javascript', 'Joint Js', 'Next Js', 
+    'Adobe Illustrator', 'Animation', 'API', 'RPCs',
+    'Authentication', 'Code review', 'CSS', 'Blockchain',
+    'Figma', 'Git', 'HTML5', 'Uniswap', 'Solidity',
+    'Javascript', '', 'Next JS', 'Ether JS', 'Code review',
     'Product strategy', 'React', 'SEO', 'Tailwind',
     'Web Sockets', 'Product Development', 'UX',
 ];
